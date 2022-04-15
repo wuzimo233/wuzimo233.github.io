@@ -81,6 +81,33 @@
     </entry>
     
     
+    
+    <entry>
+      <title>测试</title>
+      <link href="/posts/4.html"/>
+      <url>/posts/4.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="认识-Promise"><a href="#认识-Promise" class="headerlink" title="认识 Promise"></a>认识 Promise</h2><p>大文帝</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 前端 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 学习 </tag>
+            
+            <tag> Promise </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
   
   
 </search>

@@ -6,7 +6,7 @@
   <link href="https://wuzimo233.github.io/atom.xml" rel="self"/>
   
   <link href="https://wuzimo233.github.io/"/>
-  <updated>2022-04-14T15:12:15.821Z</updated>
+  <updated>2022-04-15T10:03:03.250Z</updated>
   <id>https://wuzimo233.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://wuzimo233.github.io/posts/3.html"/>
     <id>https://wuzimo233.github.io/posts/3.html</id>
     <published>2022-04-14T06:30:00.000Z</published>
-    <updated>2022-04-14T15:12:15.821Z</updated>
+    <updated>2022-04-15T10:03:03.250Z</updated>
     
     <content type="html"><![CDATA[<h2 id="认识-Promise"><a href="#认识-Promise" class="headerlink" title="认识 Promise"></a>认识 Promise</h2><ul><li><h3 id="什么是-Promise"><a href="#什么是-Promise" class="headerlink" title="什么是 Promise"></a>什么是 Promise</h3></li></ul><ol><li>抽象表达:<blockquote><p>Promise 是一门新的技术(ES6 规范)<br>Promise 是 JS 中进行异步编程的新解决方案<br>备注：旧方案是单纯使用回调函数</p></blockquote></li><li>具体表达:<blockquote><p>语法上来说: Promise 是一个构造函数<br>从功能上来说: promise 对象用来封装一个异步操作并可以获取其成功/失败的结果值</p></blockquote></li></ol><h3 id="为什么要用-Promise"><a href="#为什么要用-Promise" class="headerlink" title="为什么要用 Promise"></a>为什么要用 Promise</h3><h4 id="指定回调函数的方式更加灵活"><a href="#指定回调函数的方式更加灵活" class="headerlink" title="指定回调函数的方式更加灵活"></a>指定回调函数的方式更加灵活</h4><ol><li>旧的: 必须在启动异步任务前指定</li><li>promise: 启动异步任务 =&gt; 返回 promie 对象 =&gt; 给 promise 对象绑定回调函<br>数(甚至可以在异步任务结束后指定/多个)</li></ol><h4 id="支持链式调用-可以解决回调地狱问题"><a href="#支持链式调用-可以解决回调地狱问题" class="headerlink" title="支持链式调用, 可以解决回调地狱问题"></a>支持链式调用, 可以解决回调地狱问题</h4><blockquote><ol><li>什么是回调地狱?<br> 回调函数嵌套调用, 外部回调函数异步执行的结果是嵌套的回调执行的条件<br> <img src="https://s1.ax1x.com/2022/04/14/LlRNPf.jpg" alt="回调地狱"></li><li>回调地狱的缺点?<br> 不便于阅读<br> 不便于异常处理</li><li>解决方案?<br> promise 链式调用</li><li>终极解决方案?<br> async/await</li></ol></blockquote><h3 id="如何使用-Promise"><a href="#如何使用-Promise" class="headerlink" title="如何使用 Promise"></a>如何使用 Promise</h3><h4 id="Promise-初体验"><a href="#Promise-初体验" class="headerlink" title="Promise 初体验"></a>Promise 初体验</h4><blockquote><p><strong>案例：需求——点击抽奖按钮两秒后，告诉用户是否中奖，中奖的概率是百分之 30。如果中奖在页面中弹框告知恭喜中奖，没有就弹出再接再厉。</strong></p></blockquote><p><code>一般方法实现</code></p><pre class="line-numbers language-none"><code class="language-none">&lt;div class="container"&gt;    &lt;h2 class="page-header"&gt;Promise 初体验&lt;/h2&gt;    &lt;button class="btn btn-primary" id="btn"&gt;点击抽奖&lt;/button&gt;&lt;/div&gt;&lt;script&gt;    //生成随机数    function rand(m,n){        return Math.ceil(Math.random() * (n-m+1)) + m-1;    }    //获取元素对象    const btn = document.querySelector('#btn');    //绑定单击事件    btn.addEventListener('click', function(){        // 定时器       setTimeout(() =&gt; {           //获取从1 - 100的一个随机数           let n = rand(1, 100);           //判断           if(n &lt;= 30){               alert(n+'恭喜恭喜, 奖品为 10万 RMB 劳斯莱斯优惠券');           }else{               alert(n+'再接再厉');           }       }, 1000);    })&lt;/script&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p><strong>Promise 语法结构</strong></p><blockquote><p>语法结构： new Promise((resolve, reject) =&gt; { } 里面是一个函数类型的参数，参数里面的两个参数也是函数<br>在花括号{ }里边包含一个异步操作,如果成功则调用 resolve ，同时只要 resolve 调用就会将 promise 对象 p 的状态设置为『成功』，<br>如果失败则调用 reject，调完 reject 后会将 promise 对象 p 的状态设置为『失败』（即这两个可以修改 promise&gt;对象的状态）<br>接着 promise 对象通过调用 then()方法去指定成功和失败时的回调<br>如果成功就执行第一个回调函数，失败则执行第二个回调函数<br>Promise 除了可以封装异步操作之外，还能获取异步操作里成功和失败的结果值 即下方案例的 n 值<br>然后可以将 n 值传递给 resolve 和 reject 函数<br>最后下方的 then 方法里的两个回调都能拿到这个结果值作为参数使用</p></blockquote><p> <code>Promise 形式实现 </code></p><pre class="line-numbers language-none"><code class="language-none">&lt;div class="container"&gt;    &lt;h2 class="page-header"&gt;Promise 初体验&lt;/h2&gt;    &lt;button class="btn btn-primary" id="btn"&gt;点击抽奖&lt;/button&gt;&lt;/div&gt;&lt;script&gt;      //生成随机数    function rand(m,n){        return Math.ceil(Math.random() * (n-m+1)) + m-1;    }      //获取元素对象    const btn = document.querySelector('#btn');      //绑定单击事件    btn.addEventListener('click', function(){          // 使用 new Promise(接收一个函数参数) 创建实例          // resolve 解决  函数类型的数据 --成功时调用          // reject  拒绝  函数类型的数据 --失败时调用          const p = new Promise((resolve, reject) =&gt; {              // promise对象可以包裹一个异步操作（直接将上方定时器拿过来）              setTimeout(() =&gt; {                  //30%  1-100  1 2 30                  //获取从1 - 100的一个随机数                  let n = rand(1, 100);                  //判断                  if(n &lt;= 30){                      // Promise除了可以封装异步操作之外，还能获取异步操作里成功和失败的结果值 即这里的n值                      // 可以将n值传递给resolve 和 reject函数                      // 那么下方的then方法里的两个回调都能拿到这个结果值作为参数                      resolve(n); //  调完resolve后会将 promise 对象 p 的状态设置为『成功』                  }else{                      reject(n); // 调完reject后会将 promise 对象 p 的状态设置为『失败』                  }              }, 1000);          });          console.log(p);          //调用 then（里边有两个回调函数参数） 方法 --- 每个promise对象上都有then方法          // 第一个回调是对象状态为成功时的回调，第二个是对象状态失败时的回调函数          // value 值          // reason 理由          p.then((value) =&gt; {              alert('恭喜恭喜, 奖品为 10万 RMB 劳斯莱斯优惠券, 您的中奖数字为 ' + value);          }, (reason) =&gt; {              alert('再接再厉, 您的号码为 ' + reason);          });      })&lt;/script&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h4 id="实践练习"><a href="#实践练习" class="headerlink" title="实践练习"></a>实践练习</h4><hr><h2 id="自定义手写-Promise"><a href="#自定义手写-Promise" class="headerlink" title="自定义手写 Promise"></a>自定义手写 Promise</h2><h3 id="定义整体结构"><a href="#定义整体结构" class="headerlink" title="定义整体结构"></a>定义整体结构</h3><h3 id="定义整体结构-1"><a href="#定义整体结构-1" class="headerlink" title="定义整体结构"></a>定义整体结构</h3><h3 id="定义整体结构-2"><a href="#定义整体结构-2" class="headerlink" title="定义整体结构"></a>定义整体结构</h3><h2 id="async-与-await"><a href="#async-与-await" class="headerlink" title="async 与 await"></a>async 与 await</h2>]]></content>
     
@@ -73,8 +73,8 @@
     <title>博客与博主</title>
     <link href="https://wuzimo233.github.io/posts/1.html"/>
     <id>https://wuzimo233.github.io/posts/1.html</id>
-    <published>2022-04-13T17:17:00.000Z</published>
-    <updated>2022-04-13T17:25:10.101Z</updated>
+    <published>2022-04-12T17:17:00.000Z</published>
+    <updated>2022-04-15T06:14:16.957Z</updated>
     
     <content type="html"><![CDATA[<p>相遇皆是缘分</p><h3 id="为什么建博客？"><a href="#为什么建博客？" class="headerlink" title="为什么建博客？"></a>为什么建博客？</h3><p>因为学习一些知识总是学了就忘，或者敲了不复习，记得手写笔记也根本不爱翻动。花了大半天时间搭建个博客来记录未来学到的知识，勤能补拙吧~</p><h3 id="展望博客"><a href="#展望博客" class="headerlink" title="展望博客"></a>展望博客</h3><p>我会整理一些个人所学的知识（前端方向和一些其它数码、科技、摄影先暂时想这么多）或生活方面有兴趣的事发到博客上。</p><h3 id="关于博主"><a href="#关于博主" class="headerlink" title="关于博主"></a>关于博主</h3><p>普普通通的社畜。。</p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"> 勇敢就是，在你还没开始的时候就知道自己会输，但依然要去做，而且无论如何都要把它坚持到底。你很少能赢，但有时也会。​ <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><p>go on！</p>]]></content>
     
@@ -91,6 +91,33 @@
     
     
     <category term="生活" scheme="https://wuzimo233.github.io/tags/%E7%94%9F%E6%B4%BB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>测试</title>
+    <link href="https://wuzimo233.github.io/posts/4.html"/>
+    <id>https://wuzimo233.github.io/posts/4.html</id>
+    <published>2022-02-14T06:30:00.000Z</published>
+    <updated>2022-04-15T10:16:09.664Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="认识-Promise"><a href="#认识-Promise" class="headerlink" title="认识 Promise"></a>认识 Promise</h2><p>大文帝</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;认识-Promise&quot;&gt;&lt;a href=&quot;#认识-Promise&quot; class=&quot;headerlink&quot; title=&quot;认识 Promise&quot;&gt;&lt;/a&gt;认识 Promise&lt;/h2&gt;&lt;p&gt;大文帝&lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    <category term="前端" scheme="https://wuzimo233.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+    <category term="学习" scheme="https://wuzimo233.github.io/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="Promise" scheme="https://wuzimo233.github.io/tags/Promise/"/>
     
   </entry>
   

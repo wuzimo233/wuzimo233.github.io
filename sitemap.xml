@@ -2,14 +2,56 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://wuzimo233.github.io/posts/2.html</loc>
+    <loc>https://wuzimo233.github.io/posts/4.html</loc>
     
-    <lastmod>2022-04-14</lastmod>
+    <lastmod>2022-04-15</lastmod>
     
   </url>
   
   <url>
     <loc>https://wuzimo233.github.io/posts/3.html</loc>
+    
+    <lastmod>2022-04-15</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://wuzimo233.github.io/comments/index.html</loc>
+    
+    <lastmod>2022-04-15</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://wuzimo233.github.io/link/index.html</loc>
+    
+    <lastmod>2022-04-15</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://wuzimo233.github.io/categories/index.html</loc>
+    
+    <lastmod>2022-04-15</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://wuzimo233.github.io/tags/index.html</loc>
+    
+    <lastmod>2022-04-15</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://wuzimo233.github.io/posts/1.html</loc>
+    
+    <lastmod>2022-04-15</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://wuzimo233.github.io/posts/2.html</loc>
     
     <lastmod>2022-04-14</lastmod>
     
@@ -19,13 +61,6 @@
     <loc>https://wuzimo233.github.io/List/movies/index.html</loc>
     
     <lastmod>2022-04-14</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://wuzimo233.github.io/posts/1.html</loc>
-    
-    <lastmod>2022-04-13</lastmod>
     
   </url>
   
@@ -40,13 +75,6 @@
     <loc>https://wuzimo233.github.io/List/music/index.html</loc>
     
     <lastmod>2022-04-13</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://wuzimo233.github.io/comments/index.html</loc>
-    
-    <lastmod>2021-11-23</lastmod>
     
   </url>
   
@@ -72,27 +100,6 @@
   </url>
   
   <url>
-    <loc>https://wuzimo233.github.io/link/index.html</loc>
-    
-    <lastmod>2021-07-27</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://wuzimo233.github.io/tags/index.html</loc>
-    
-    <lastmod>2021-07-26</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://wuzimo233.github.io/categories/index.html</loc>
-    
-    <lastmod>2021-07-26</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://wuzimo233.github.io/music/index.html</loc>
     
     <lastmod>2021-07-26</lastmod>
@@ -109,7 +116,7 @@
 
   <url>
     <loc>https://wuzimo233.github.io/</loc>
-    <lastmod>2022-04-14</lastmod>
+    <lastmod>2022-04-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -117,28 +124,28 @@
   
   <url>
     <loc>https://wuzimo233.github.io/tags/%E7%94%9F%E6%B4%BB/</loc>
-    <lastmod>2022-04-14</lastmod>
+    <lastmod>2022-04-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://wuzimo233.github.io/tags/%E5%AD%A6%E4%B9%A0/</loc>
-    <lastmod>2022-04-14</lastmod>
+    <lastmod>2022-04-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://wuzimo233.github.io/tags/Ajax/</loc>
-    <lastmod>2022-04-14</lastmod>
+    <lastmod>2022-04-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://wuzimo233.github.io/tags/Promise/</loc>
-    <lastmod>2022-04-14</lastmod>
+    <lastmod>2022-04-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -147,14 +154,14 @@
   
   <url>
     <loc>https://wuzimo233.github.io/categories/%E6%84%9F%E6%83%B3/</loc>
-    <lastmod>2022-04-14</lastmod>
+    <lastmod>2022-04-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://wuzimo233.github.io/categories/%E5%89%8D%E7%AB%AF/</loc>
-    <lastmod>2022-04-14</lastmod>
+    <lastmod>2022-04-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
