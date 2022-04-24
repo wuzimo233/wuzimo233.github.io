@@ -1,13 +1,13 @@
-<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Vue基础知识学习 | zimo</title><meta name="keywords" content="学习,Vue"><meta name="author" content="Zimo"><meta name="copyright" content="Zimo"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="Vue 基础知识点vue的安装谈谈对Vue的理解Vue是渐进式 JavaScript 框架、核心库加插件、动态创建用户界面（异步获取后台数据，数据展示在界面）特点： MVVM 模式；代码简洁体积小，运行效率高，适合移动PC端开发；本身只关注 UI （和 react 相似），可以轻松引入 Vue 插件或其他的第三方库进行开发。 vue的优点 轻量级框架：只关注视图层，是一个构建数据的视图集合，大小只">
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Vue基础知识学习 | zimo</title><meta name="keywords" content="学习,Vue"><meta name="author" content="Zimo"><meta name="copyright" content="Zimo"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="Vue 基础知识点vue的安装Vue介绍 Vue是渐进式（渐进式：项目中可以逐步使用vue框架 可以使用一部分 或者是整个项目） JavaScript 框架 框架为单页面的应用程序 （Vue项目入口：只有一个页面 index.html ） 跳转的页面路由功能-  路由 （其他页面组件） 框架里面使用的是虚拟DOM 没有js BOM DOM   特点： MVVM 模式；代码简洁体积小，运行效率高，适">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Vue基础知识学习">
 <meta property="og:url" content="https://wuzimo233.github.io/posts/5.html">
 <meta property="og:site_name" content="zimo">
-<meta property="og:description" content="Vue 基础知识点vue的安装谈谈对Vue的理解Vue是渐进式 JavaScript 框架、核心库加插件、动态创建用户界面（异步获取后台数据，数据展示在界面）特点： MVVM 模式；代码简洁体积小，运行效率高，适合移动PC端开发；本身只关注 UI （和 react 相似），可以轻松引入 Vue 插件或其他的第三方库进行开发。 vue的优点 轻量级框架：只关注视图层，是一个构建数据的视图集合，大小只">
+<meta property="og:description" content="Vue 基础知识点vue的安装Vue介绍 Vue是渐进式（渐进式：项目中可以逐步使用vue框架 可以使用一部分 或者是整个项目） JavaScript 框架 框架为单页面的应用程序 （Vue项目入口：只有一个页面 index.html ） 跳转的页面路由功能-  路由 （其他页面组件） 框架里面使用的是虚拟DOM 没有js BOM DOM   特点： MVVM 模式；代码简洁体积小，运行效率高，适">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://images.alphacoders.com/101/1014461.jpg">
 <meta property="article:published_time" content="2022-04-17T11:47:00.000Z">
-<meta property="article:modified_time" content="2022-04-20T17:14:11.191Z">
+<meta property="article:modified_time" content="2022-04-24T10:47:41.319Z">
 <meta property="article:author" content="Zimo">
 <meta property="article:tag" content="学习">
 <meta property="article:tag" content="Vue">
@@ -59,7 +59,7 @@
   isHome: false,
   isHighlightShrink: false,
   isToc: true,
-  postUpdate: '2022-04-21 01:14:11'
+  postUpdate: '2022-04-24 18:47:41'
 }</script><noscript><style type="text/css">
   #nav {
     opacity: 1
@@ -151,17 +151,128 @@
     document.addEventListener('pjax:complete', detectApple)})(window)</script><link defer rel="stylesheet" href="/css/customm.css" ><link defer rel="stylesheet" href="https://cdn.jsdelivr.net/gh/zhaoze-jpg/Xianqi@main/css/icon.css"><link defer rel="stylesheet" href="https://cdn.jsdelivr.net/gh/HCLonely/images@master/others/heartbeat.min.css"><link defer rel="stylesheet" href="https://cdn.jsdelivr.net/gh/zhaoze-jpg/Xianqi@main/css/background.css"><link defer rel="stylesheet" href="https://cdn.jsdelivr.net/gh/zhaoze-jpg/Xianqi@main/css/index_ee.css"><meta name="generator" content="Hexo 5.2.0">
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
 <link rel="alternate" href="/atom.xml" title="zimo" type="application/atom+xml">
-</head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://s1.ax1x.com/2022/04/13/LQEmP1.jpg" onerror="onerror=null;src='https://cdn.jsdelivr.net/gh/zhaoze-jpg/Xianqi@main/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">10</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">标签</div><div class="length-num">7</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/categories/"><div class="headline">分类</div><div class="length-num">2</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-archive"></i><span> 归档</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 归档</span></a></li><li><a class="site-page child" href="/artitalk/"><i class="fa-fw fas fa-book"></i><span> 说说</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-heartbeat"></i><span> 清单</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/List/music/"><i class="fa-fw fa fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/List/gallery/"><i class="fa-fw fa fa-image"></i><span> 相册</span></a></li><li><a class="site-page child" href="/List/videos/"><i class="fa-fw fas fa-video"></i><span> 视频</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/comments/"><i class="fa-fw fa fa-paper-plane"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/tools/"><i class="fa-fw fa fa-suitcase"></i><span> 百宝箱</span></a></div><div class="menus_item"><a class="site-page" href="/Windows/"><i class="fa-fw fa fa-desktop"></i><span> Windows</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-heart"></i><span> 关于我</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://images.alphacoders.com/101/1014461.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">zimo</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-archive"></i><span> 归档</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 归档</span></a></li><li><a class="site-page child" href="/artitalk/"><i class="fa-fw fas fa-book"></i><span> 说说</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-heartbeat"></i><span> 清单</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/List/music/"><i class="fa-fw fa fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/List/gallery/"><i class="fa-fw fa fa-image"></i><span> 相册</span></a></li><li><a class="site-page child" href="/List/videos/"><i class="fa-fw fas fa-video"></i><span> 视频</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/comments/"><i class="fa-fw fa fa-paper-plane"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/tools/"><i class="fa-fw fa fa-suitcase"></i><span> 百宝箱</span></a></div><div class="menus_item"><a class="site-page" href="/Windows/"><i class="fa-fw fa fa-desktop"></i><span> Windows</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-heart"></i><span> 关于我</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">Vue基础知识学习</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-04-17T11:47:00.000Z" title="发表于 2022-04-17 19:47:00">2022-04-17</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2022-04-20T17:14:11.191Z" title="更新于 2022-04-21 01:14:11">2022-04-21</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E5%89%8D%E7%AB%AF/">前端</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">4k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>16分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="Vue基础知识学习"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h2 id="Vue-基础知识点"><a href="#Vue-基础知识点" class="headerlink" title="Vue 基础知识点"></a>Vue 基础知识点</h2><h3 id="vue的安装"><a href="#vue的安装" class="headerlink" title="vue的安装"></a>vue的安装</h3><h3 id="谈谈对Vue的理解"><a href="#谈谈对Vue的理解" class="headerlink" title="谈谈对Vue的理解"></a>谈谈对Vue的理解</h3><p>Vue是渐进式 JavaScript 框架、核心库加插件、动态创建用户界面（异步获取后台数据，数据展示在界面）<br>特点： MVVM 模式；代码简洁体积小，运行效率高，适合移动PC端开发；本身只关注 UI （和 react 相似），可以轻松引入 Vue 插件或其他的第三方库进行开发。</p>
-<h3 id="vue的优点"><a href="#vue的优点" class="headerlink" title="vue的优点"></a>vue的优点</h3><blockquote>
-<p><strong>轻量级框架</strong>：只关注视图层，是一个构建数据的视图集合，大小只有几十kb；简单易学：国人开发，中文文档，不存在语言障碍 ，易于理解和学习；<br><strong>双向数据绑定</strong>：保留了angular的特点，在数据操作方面更为简单；<br><strong>组件化</strong>：保留了react的优点，实现了html的封装和重用，在构建单页面应用方面有着独特的优势；<br><strong>视图，数据，结构分离</strong>：使数据的更改更为简单，不需要进行逻辑代码的修改，只需要操作数据就能完成相关操作；<br><strong>虚拟DOM</strong>：dom操作是非常耗费性能的，不再使用原生的dom操作节点，极大解放dom操作，但具体操作的还是dom不过是换了另一种方式；<br><strong>运行速度更快</strong>:相比较与react而言，同样是操作虚拟dom，就性能而言，vue存在很大的优势。</p>
+</head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://s1.ax1x.com/2022/04/13/LQEmP1.jpg" onerror="onerror=null;src='https://cdn.jsdelivr.net/gh/zhaoze-jpg/Xianqi@main/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">10</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">标签</div><div class="length-num">7</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/categories/"><div class="headline">分类</div><div class="length-num">2</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-archive"></i><span> 归档</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 归档</span></a></li><li><a class="site-page child" href="/artitalk/"><i class="fa-fw fas fa-book"></i><span> 说说</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-heartbeat"></i><span> 清单</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/List/music/"><i class="fa-fw fa fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/List/gallery/"><i class="fa-fw fa fa-image"></i><span> 相册</span></a></li><li><a class="site-page child" href="/List/videos/"><i class="fa-fw fas fa-video"></i><span> 视频</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/comments/"><i class="fa-fw fa fa-paper-plane"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/tools/"><i class="fa-fw fa fa-suitcase"></i><span> 百宝箱</span></a></div><div class="menus_item"><a class="site-page" href="/Windows/"><i class="fa-fw fa fa-desktop"></i><span> Windows</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-heart"></i><span> 关于我</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://images.alphacoders.com/101/1014461.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">zimo</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-archive"></i><span> 归档</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 归档</span></a></li><li><a class="site-page child" href="/artitalk/"><i class="fa-fw fas fa-book"></i><span> 说说</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-heartbeat"></i><span> 清单</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/List/music/"><i class="fa-fw fa fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/List/gallery/"><i class="fa-fw fa fa-image"></i><span> 相册</span></a></li><li><a class="site-page child" href="/List/videos/"><i class="fa-fw fas fa-video"></i><span> 视频</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/comments/"><i class="fa-fw fa fa-paper-plane"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/tools/"><i class="fa-fw fa fa-suitcase"></i><span> 百宝箱</span></a></div><div class="menus_item"><a class="site-page" href="/Windows/"><i class="fa-fw fa fa-desktop"></i><span> Windows</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-heart"></i><span> 关于我</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">Vue基础知识学习</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-04-17T11:47:00.000Z" title="发表于 2022-04-17 19:47:00">2022-04-17</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2022-04-24T10:47:41.319Z" title="更新于 2022-04-24 18:47:41">2022-04-24</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E5%89%8D%E7%AB%AF/">前端</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">6.2k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>25分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="Vue基础知识学习"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="Vue-基础知识点"><a href="#Vue-基础知识点" class="headerlink" title="Vue 基础知识点"></a>Vue 基础知识点</h1><h2 id="vue的安装"><a href="#vue的安装" class="headerlink" title="vue的安装"></a>vue的安装</h2><h2 id="Vue介绍"><a href="#Vue介绍" class="headerlink" title="Vue介绍"></a>Vue介绍</h2><ol>
+<li>Vue是渐进式（渐进式：项目中可以逐步使用vue框架 可以使用一部分 或者是整个项目） JavaScript 框架</li>
+<li>框架为单页面的应用程序 （Vue项目入口：只有一个页面 index.html ）</li>
+<li>跳转的页面路由功能-  路由 （其他页面组件）</li>
+<li>框架里面使用的是虚拟DOM 没有js BOM DOM </li>
+</ol>
+<p>特点： MVVM 模式；代码简洁体积小，运行效率高，适合移动PC端开发；本身只关注 UI （和 react 相似），可以轻松引入 Vue 插件或其他的第三方库进行开发。</p>
+<h2 id="vue的优缺点"><a href="#vue的优缺点" class="headerlink" title="vue的优缺点"></a>vue的优缺点</h2><p><strong>优点：</strong></p>
+<blockquote>
+<p><strong>轻量级框架</strong>：只关注视图层，是一个构建数据的视图集合，大小只有几十kb；简单易学：国人开发，中文文档，不存在语言障碍 ，易于理解和学习；<br><strong>双向数据绑定</strong>：保留了angular的特点，在数据操作方面更为简单；<br><strong>组件化</strong>：保留了react的优点，实现了html的封装和重用，在构建单页面应用方面有着独特的优势；<br><strong>视图，数据，结构分离</strong>：使数据的更改更为简单，不需要进行逻辑代码的修改，只需要操作数据就能完成相关操作；<br><strong>虚拟DOM</strong>：dom操作是非常耗费性能的，不再使用原生的dom操作节点，极大解放dom操作，但具体操作的还是dom不过是换了另一种方式；<br><strong>运行速度更快</strong>:相比较与react而言，同样是操作虚拟dom，就性能而言，vue存在很大的优势。<br><strong>缺点：</strong></p>
 </blockquote>
-<h3 id="Vue-的生命周期方法有哪些-一般在哪一步发请求"><a href="#Vue-的生命周期方法有哪些-一般在哪一步发请求" class="headerlink" title="Vue 的生命周期方法有哪些 一般在哪一步发请求"></a>Vue 的生命周期方法有哪些 一般在哪一步发请求</h3><p><strong>生命周期</strong>：事物从诞生到消亡的过程<br>Vue生命周期：<br><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://s1.ax1x.com/2022/04/19/L06cp4.png"></p>
-<h3 id="vue基本指令"><a href="#vue基本指令" class="headerlink" title="vue基本指令"></a>vue基本指令</h3><h4 id="插值操作"><a href="#插值操作" class="headerlink" title="插值操作"></a>插值操作</h4><p>Mustache</p>
+<ol>
+<li>单页面应用程序，首页加载速度慢  </li>
+<li>不利于搜索引擎优化  </li>
+</ol>
+<h2 id="Vue的使用"><a href="#Vue的使用" class="headerlink" title="Vue的使用"></a>Vue的使用</h2><h3 id="局部使用Vue"><a href="#局部使用Vue" class="headerlink" title="局部使用Vue"></a>局部使用Vue</h3><ol>
+<li>引入 Vue 的cnd网址 或者是下载到本地js文件  （类似：jquery.js）</li>
+<li>创建vue实例  </li>
+<li>代码演示<pre class="line-numbers language-none"><code class="language-none">&lt;head&gt;
+    //引入js文件夹里的vue
+    &lt;script src="./JS/vue.js"&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;!-- 使用vue --&gt;
+    &lt;div id="app"&gt;
+        &lt;p&gt;这是vue的区域了 app--&lt;/p&gt;
+        &lt;p&gt;获取vue的信息：{{msg}}&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;!-- 创建vue实例 --&gt;
+    &lt;script&gt;
+        const vm = new Vue({
+            el:'#app',//获取element元素
+            data:{
+                msg:'hello vue',
+            }
+        })
+    &lt;/script&gt;
+&lt;/body&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+</li>
+</ol>
+<h3 id="搭建vue项目"><a href="#搭建vue项目" class="headerlink" title="搭建vue项目"></a>搭建vue项目</h3><p><strong>1.兼容性</strong><br>Vue 不支持 IE8 及以下版本，因为 Vue 使用了 IE8 无法模拟的 ECMAScript 5 特性。但它支持所有兼容 ECMAScript 5 的浏览器。</p>
+<p><strong>2.安装nodejs</strong></p>
+<ul>
+<li>Node 是一个让 JavaScript 运行在服务端的开发平台，它让 JavaScript 成为与PHP、Python、Perl、Ruby 等服务端语言平起平坐的脚本语言。发布于2009年5月，由Ryan Dahl开发，实质是对Chrome V8引擎进行了封装。</li>
+<li>通俗点讲 Node.js是一个JavaScript编程语言的运行环境，在没有node.js之前，JavaScript代码几乎只能在浏览器中运行，通过浏览器解释执行。浏览器其实也是JavaScript的一个运行环境，JavaScript在浏览器中运行主要是面向客户端这方面的。后来node.js诞生了，JavaScript就可以在node.js中来运行了，JavaScript可以基于node.js环境做服务端开发。<strong>所以node.js也是JavaScript的服务端运行环境</strong>。</li>
+<li>官方下载地址(<a target="_blank" rel="noopener" href="https://nodejs.org/en/">https://nodejs.org/en/</a>) 或者中文网站(<a target="_blank" rel="noopener" href="https://nodejs.org/zh-cn/download/">https://nodejs.org/zh-cn/download/</a>)</li>
+<li>一般选LTS长期稳定版嘛 基本功能都差不多，点击下载并安装</li>
+<li>安装时，安装路径可以自由更改，最后英文路径或者默认，其它点下一步</li>
+<li>安装后，打开Win+R，输入cmd，窗口中输入：node -v 或 npm -v 查看版本号</li>
+</ul>
+<p><strong>3.安装vue 命令行工具 (CLI)</strong></p>
+<ul>
+<li>介绍：Vue 提供了一个官方的 CLI，为单页面应用 (SPA) 快速搭建繁杂的脚手架。CLI是一个全局安装的 npm 包，提供了终端里的 vue 命令。它可以通过 vue create 快速搭建一个新项。</li>
+<li>网址：<a target="_blank" rel="noopener" href="https://cli.vuejs.org/zh/">https://cli.vuejs.org/zh/</a></li>
+<li>版本：Vue CLI 4.x 需要 Node.js v8.9 或更高版本 (推荐 v10 以上)</li>
+<li>先安装yarn:  npm i yarn -g (推荐)</li>
+<li>安装vue-cli：<br> npm install -g @vue/cli   （下载模块：npm  install 模块 ）<br>   或者<br> yarn global add @vue/cli   （下载模块：yarn add  模块 ）</li>
+<li>检查其版本是否正确<br>vue –version</li>
+</ul>
+<p><strong>4.创建一个vue项目–通过脚手架vue-cli</strong> </p>
+<ol>
+<li>创建vue项目： vue create vue-project<br>说明：vue项目名称最好是英文 不能包含驼峰命名法</li>
+<li>按需项目需要的依赖配置</li>
+<li>进入项目<br>cd 项目名称</li>
+<li>启动项目<br>npm run serve<br>或者<br>yarn serve </li>
+<li>打包项目<br>npm run build </li>
+</ol>
+<h2 id="目录结构"><a href="#目录结构" class="headerlink" title="目录结构"></a>目录结构</h2><blockquote>
+<p>node_moudles   安装包依赖 –模块<br>public         单页面入口 - index.html<br>src             资源文件 – 前端<br>– – assets     静态文件资源 - 放置 css js images<br>– – components 公共组件 - 组件化 （样式 布局 效果）<br>– – App.vue    根组件<br>– – main.js    入口配置文件<br>.browserslistrc 浏览器配置<br>.gitignore      上传git仓库 忽略的文件配置<br>babel.config.js babel配置<br>package.json    项目配置文件 （查看项目安装的依赖 版本 名称… ）<br>readme.md       项目说明文件<br>yarn.lock       配置信息 忽略</p>
+</blockquote>
+<h2 id="Vue组件组成"><a href="#Vue组件组成" class="headerlink" title="Vue组件组成"></a>Vue组件组成</h2><ol>
+<li><p>组成-三部分</p>
+<ol>
+<li>template  视图标签  （template标签不会被渲染 只是包裹作用） 必写</li>
+<li>script    逻辑代码  </li>
+<li>style     样式   lang=’less/scss’ scoped </li>
+</ol>
+</li>
+<li><p>创建组件 </p>
+<ol>
+<li>xxx.vue  后缀.vue结尾</li>
+<li>三部分组件  快捷键 vue</li>
+</ol>
+</li>
+<li><p>组件使用</p>
+<ol>
+<li>引入组件 </li>
+<li>注册组件</li>
+<li>使用组件<pre class="line-numbers language-none"><code class="language-none">&lt;script&gt;
+    //1. 引入组件
+    import Banner from './components/Banner.vue'
+
+    export default {
+        name: 'App',
+        //2. 注册组件
+        components: {
+            Banner,
+        }
+    }
+&lt;/script&gt;
+ 
+&lt;!-- 3. 使用组件 --&gt;
+&lt;Banner&gt;&lt;/Banner&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+</li>
+</ol>
+</li>
+</ol>
+<h2 id="vue基本指令"><a href="#vue基本指令" class="headerlink" title="vue基本指令"></a>vue基本指令</h2><p><strong>指令：就是以 v-指令=’js环境’ 具体特定的工具 ，指令。</strong></p>
+<h3 id="插值操作-模板语法"><a href="#插值操作-模板语法" class="headerlink" title="插值操作 (模板语法)"></a>插值操作 (模板语法)</h3><ol>
+<li>作用：获取vue数据 显示视图 模板语法来声明式地将数据渲染进 DOM </li>
+<li>语法：</li>
+</ol>
+<p><strong>Mustache</strong></p>
 <pre class="line-numbers language-none"><code class="language-none">&lt;div id="app"&gt;
   &lt;h2&gt;{{message}}&lt;/h2&gt;
   &lt;h2&gt;{{message}}, 李银河!&lt;/h2&gt;
 
   &lt;!--mustache语法中,不仅仅可以直接写变量,也可以写简单的表达式--&gt;
+  // 获取data里的数据
   &lt;h2&gt;{{firstName + lastName}}&lt;/h2&gt;
   &lt;h2&gt;{{firstName + ' ' + lastName}}&lt;/h2&gt;
   &lt;h2&gt;{{firstName}} {{lastName}}&lt;/h2&gt;
@@ -171,6 +282,7 @@
 &lt;script&gt;
   const app = new Vue({
     el: '#app',
+    // 提供数据
     data: {
       message: '你好啊',
       firstName: 'kobe',
@@ -178,9 +290,9 @@
       counter: 100
     },
   })
-&lt;/script&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+&lt;/script&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<h4 id="v-once"><a href="#v-once" class="headerlink" title="v-once"></a>v-once</h4><p>在某些情况下，我们可能不希望界面随意的跟随改变<br>这个时候，我们就可以使用一个Vue的指令<br>v-once:<br>该指令后面不需要跟任何表达式(比如之前的v-for后面是由跟表达式的)<br>该指令表示元素和组件(组件后面才会学习)只渲染一次，不会随着数据的改变而改变。<br>代码如下：</p>
+<h3 id="v-once"><a href="#v-once" class="headerlink" title="v-once"></a>v-once</h3><p>在某些情况下，我们可能不希望界面随意的跟随改变<br>这个时候，我们就可以使用一个Vue的指令<br>v-once:<br>该指令后面不需要跟任何表达式(比如之前的v-for后面是由跟表达式的)<br>该指令表示元素和组件(组件后面才会学习)只渲染一次，不会随着数据的改变而改变。<br>代码如下：</p>
 <pre class="line-numbers language-none"><code class="language-none">&lt;div id="app"&gt;
   &lt;h2&gt;{{message}}&lt;/h2&gt;
   &lt;h2 v-once&gt;{{message}},李银河&lt;/h2&gt;
@@ -196,7 +308,7 @@
   })
 &lt;/script&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<h4 id="v-html"><a href="#v-html" class="headerlink" title="v-html"></a>v-html</h4><p>某些情况下，我们从服务器请求到的数据本身就是一个HTML代码<br>如果我们直接通过插值语法来输出，会将HTML代码也一起输出<br>但是我们可能希望的是按照HTML格式进行解析，并且显示对应的内容<br>如果我们希望解析出HTML展示<br>可以使用v-html指令<br>该指令后面往往会跟上一个string类型<br>会将string的html解析出来并且进行渲染</p>
+<h3 id="v-html-原生HTML"><a href="#v-html-原生HTML" class="headerlink" title="v-html -原生HTML"></a>v-html -原生HTML</h3><p>某些情况下，我们从服务器请求到的数据本身就是一个HTML代码<br>如果我们直接通过插值语法来输出，会将HTML代码也一起输出<br>但是我们可能希望的是按照HTML格式进行解析，并且显示对应的内容<br>可以使用v-html指令<br>该指令后面往往会跟上一个string类型<br>会将string的html解析出来并且进行渲染</p>
 <pre class="line-numbers language-none"><code class="language-none">&lt;div id="app"&gt;
   &lt;h2&gt;{{url}}&lt;/h2&gt;
   &lt;h2 v-html="url"&gt;&lt;/h2&gt;
@@ -213,7 +325,203 @@
   })
 &lt;/script&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<h4 id="v-text"><a href="#v-text" class="headerlink" title="v-text"></a>v-text</h4><p>v-text作用和Mustache比较相似：<strong>都是用于将数据显示在界面中</strong><br>v-text<strong>通常情况下，接受一个string类型</strong><br>缺点是不够灵活：第二个h2不会显示李银河</p>
+<h3 id="v-if-条件渲染-（v-else、v-else-if）"><a href="#v-if-条件渲染-（v-else、v-else-if）" class="headerlink" title="v-if  -条件渲染 （v-else、v-else-if）"></a>v-if  -条件渲染 （v-else、v-else-if）</h3><ol>
+<li>作用：是否显示元素/  true 显示 false 隐藏 </li>
+</ol>
+<p><strong>语法：</strong></p>
+<pre class="line-numbers language-none"><code class="language-none">&lt;span v-if="boolean表达式"&gt;&lt;/span&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p><strong>v-else</strong><br>作用：是对 v-if=’’的结果取反 </p>
+<pre class="line-numbers language-none"><code class="language-none">&lt;span v-if="boolean表达式"&gt;&lt;/span&gt;
+&lt;span v-else&gt;xxxx &lt;/span&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<p><strong>v-else-if</strong><br>作用：是否显示元素  与v-if  v-else-if 多语句判断</p>
+<pre class="line-numbers language-none"><code class="language-none">&lt;span v-if="boolean表达式"&gt;&lt;/span&gt;
+&lt;span v-else-if="boolean表达式"&gt;&lt;/span&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<p><strong>案例：</strong></p>
+<pre class="line-numbers language-none"><code class="language-none">&lt;template&gt;
+  &lt;div&gt;
+    &lt;h2&gt;条件渲染 vue-if&lt;/h2&gt; 
+    &lt;!-- v-if='boolean' --&gt;
+    &lt;p&gt;v-if的值：{{flag}}&lt;/p&gt;
+    &lt;p v-if="flag"&gt;我是v-if为true显示的&lt;/p&gt;
+    &lt;h4 v-else&gt;我是v-else控制显示&lt;/h4&gt;
+
+    &lt;button @click="change()"&gt;点我控制v-if的值&lt;/button&gt;
+
+    &lt;!-- 多语句 --&gt;
+    &lt;p v-if="number&gt;5"&gt; number&gt;5 &lt;/p&gt;
+    &lt;p v-else-if=" 2&lt; number &lt;=5"&gt; number大于2小于等于5 &lt;/p&gt;
+    &lt;p v-else&gt; number小于2 &lt;/p&gt;
+
+    &lt;input type="text" placeholder="请输入数字来判断number" v-model="number"&gt;
+    &lt;br&gt;
+     &lt;span&gt;{{number}}&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
+
+&lt;script&gt;
+export default {
+    data(){
+        return{
+            flag:false,
+            number:"",
+            
+        }
+    },
+    methods:{
+        change(){
+            this.flag=!this.flag
+        }
+    }
+}
+&lt;/script&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="v-show"><a href="#v-show" class="headerlink" title="v-show"></a>v-show</h3><ol>
+<li>作用：是否显示元素/ true 显示 false 隐藏 </li>
+</ol>
+<p><strong>语法：</strong><br><strong>特点：</strong><br>控制元素的 display:block/none</p>
+<pre class="line-numbers language-none"><code class="language-none">&lt;span v-show="boolean表达式"&gt;&lt;/span&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h3 id="v-for-列表渲染"><a href="#v-for-列表渲染" class="headerlink" title="v-for  -列表渲染"></a>v-for  -列表渲染</h3><p><strong>1. 遍历数组</strong><br><strong>语法：</strong></p>
+<pre class="line-numbers language-none"><code class="language-none">&lt;li v-for="(item,index) in arr" :key=""&gt;
+    {{ item }}
+&lt;/li&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<ul>
+<li>属性</li>
+<li>item 第一个元素 表示数组的每一项内容</li>
+<li>index 第二个元素 表示数组的下标 0 1 </li>
+<li>arr  数组数据(或者对象)</li>
+<li>:key其实是 v-bind属性  作用：做当前数据的唯一标识  一般写的是id  不推荐 index </li>
+</ul>
+<p><strong>2. 遍历对象</strong></p>
+<pre class="line-numbers language-none"><code class="language-none">&lt;div v-for="(value, key, index) in object"&gt;
+    {{ index }}. {{ key }}: {{ value }}
+&lt;/div&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<ul>
+<li>value 对象里每个键值对的值({key:value}中的value)</li>
+<li>key 对象里每个键值对的键名({key:value}中的key)</li>
+<li>index 下标0 1</li>
+<li>object 要遍历的对象名</li>
+</ul>
+<p><strong>案例：</strong></p>
+<pre class="line-numbers language-none"><code class="language-none">&lt;template&gt;
+  &lt;div&gt;
+    &lt;h2&gt;数组遍历- v-for&lt;/h2&gt;
+    &lt;p&gt;直接获取数组数据：arr{{ arr }}&lt;/p&gt;
+
+    &lt;p&gt;遍历数组&lt;/p&gt;
+    &lt;ul&gt;
+      &lt;li v-for="(item, index) in arr" :key="item.id"&gt;
+        每一项 {{ item }} -- 下标 {{ index }}
+      &lt;/li&gt;
+    &lt;/ul&gt;
+
+--------------------------------------------------
+
+    &lt;p&gt;遍历数组(内部是对象)&lt;/p&gt;
+    &lt;ul&gt;
+      &lt;li v-for="(item, index) in books" :key="index"&gt;
+        &lt;h3&gt;书名：{{ item.name }}&lt;/h3&gt;
+        &lt;p&gt;价格：{{ item.price }}&lt;/p&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+
+----------------------------------------------------
+
+    &lt;p&gt;遍历对象&lt;/p&gt;
+    &lt;ul&gt;
+        &lt;li v-for="(ele,key) in obj " :key="key"&gt;
+            &lt;p&gt;{{key}}：：{{ele}}&lt;/p&gt;
+            &lt;!-- &lt;p&gt;姓名：{{ele.uname}}&lt;/p&gt;
+            &lt;p&gt;年龄：{{ele.age}}&lt;/p&gt; --&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+
+  &lt;/div&gt;
+&lt;/template&gt;
+
+&lt;script&gt;
+export default {
+  data() {
+    return {
+      arr: [1, 2, 3, 4],
+      books: [
+        {
+          id: 1,
+          name: "三国",
+          price: 20,
+        },
+        {
+          id: 2,
+          name: "西游记",
+          price: 30,
+        },
+        {
+          id: 3,
+          name: "红楼梦",
+          price: 40,
+        },
+      ],
+      obj: {
+        uname: "张三",
+        age: 20,
+      },
+    };
+  },
+};
+&lt;/script&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><strong>3. v-for 与 v-if 一同使用</strong></p>
+<ol>
+<li>注意不推荐在同一元素上使用 v-if 和 v-for 、v-for 的优先级比 v-if 更高</li>
+</ol>
+<p><strong>解决办法：</strong></p>
+<pre class="line-numbers language-none"><code class="language-none">&lt;template&gt;
+  &lt;div&gt;
+    &lt;h4&gt;4 v-for 与 v-if 一同使用, v-for 的优先级比 v-if 更高&lt;/h4&gt;
+    &lt;h4&gt;今天上架了什么水果：&lt;/h4&gt;
+    &lt;ul&gt;
+        &lt;template v-for="(item) in zaoshi"&gt;
+            &lt;li  :key="item.id" v-if="item.flag"&gt;
+                种类：{{item.fruit}} 
+            &lt;/li&gt;
+        &lt;/template&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
+
+&lt;script&gt;
+export default {
+  data() {
+    return {
+      zaoshi:[
+          {
+              id:100,
+              fruit:'苹果',
+              flag:true,
+          },
+          {
+              id:101,
+              fruit:'香蕉',
+              flag:false,
+          },
+          {
+              id:102,
+              fruit:'阳光玫瑰',
+              flag:true,
+          },
+          {
+              id:103,
+              fruit:'车厘子',
+              flag:false,
+          },
+
+      ]
+    };
+  },
+};
+&lt;/script&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="v-text"><a href="#v-text" class="headerlink" title="v-text"></a>v-text</h3><p>v-text作用和Mustache比较相似：<strong>都是用于将数据显示在界面中</strong><br>v-text<strong>通常情况下，接受一个string类型</strong><br>缺点是不够灵活：第二个h2不会显示李银河</p>
 <pre class="line-numbers language-none"><code class="language-none">&lt;div id="app"&gt;
   &lt;h2&gt;{{message}}, 李银河!&lt;/h2&gt;
   &lt;h2 v-text="message"&gt;, 李银河!&lt;/h2&gt;
@@ -228,10 +536,10 @@
   })
 &lt;/script&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<h4 id="v-pre"><a href="#v-pre" class="headerlink" title="v-pre"></a>v-pre</h4><p>v-pre用于跳过这个元素和它子元素的编译过程，用于显示原本的Mustache语法。<br>比如下面的代码<br>第一个h2元素中的内容会被编译解析出来对应的内容<br>第二个h2元素中会直接显示</p>
-<pre class="line-numbers language-none"><code class="language-none">&lt;div id="app"&gt;
-  &lt;h2&gt;{{message}}&lt;/h2&gt;
-  &lt;h2 v-pre&gt;{{message}}&lt;/h2&gt;
+<h3 id="v-pre"><a href="#v-pre" class="headerlink" title="v-pre"></a>v-pre</h3><p>v-pre用于跳过这个元素和它子元素的编译过程，用于显示原本的Mustache语法。<br>比如下面的代码<br>第一个h2元素中的内容会被编译解析出来对应的内容<br>第二个h2元素中会直接显示</p>
+<pre class="line-numbers language-none"><code class="language-none">&lt;div id="app"&gt; 
+  &lt;h2&gt;{{message}}&lt;/h2&gt; //你好啊
+  &lt;h2 v-pre&gt;{{message}}&lt;/h2&gt; //{{message}}
 &lt;/div&gt;
 &lt;script src="../js/vue.js"&gt;&lt;/script&gt;
 &lt;script&gt;
@@ -243,7 +551,7 @@
   })
 &lt;/script&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<h4 id="v-cloak"><a href="#v-cloak" class="headerlink" title="v-cloak"></a>v-cloak</h4><p>在某些情况下，我们浏览器可能会直接显然出未编译的Mustache标签<br>cloak: “斗篷”</p>
+<h3 id="v-cloak"><a href="#v-cloak" class="headerlink" title="v-cloak"></a>v-cloak</h3><p>在某些情况下，我们浏览器可能会直接显然出未编译的Mustache标签<br>cloak: “斗篷”</p>
 <pre class="line-numbers language-none"><code class="language-none">&lt;div id="app" v-cloak&gt;
   &lt;h2&gt;{{message}}&lt;/h2&gt;
 &lt;/div&gt;
@@ -260,13 +568,28 @@
     })
   }, 1000)
 &lt;/script&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
 <hr>
-<h3 id="v-if-和-v-show-的区别"><a href="#v-if-和-v-show-的区别" class="headerlink" title="v-if 和 v-show 的区别"></a>v-if 和 v-show 的区别</h3><h3 id="Vue-修饰符有哪些"><a href="#Vue-修饰符有哪些" class="headerlink" title="Vue 修饰符有哪些"></a>Vue 修饰符有哪些</h3><h3 id="v-for-为什么要加-key"><a href="#v-for-为什么要加-key" class="headerlink" title="v-for 为什么要加 key"></a>v-for 为什么要加 key</h3><h3 id="理解-Vue-的单向-双向-数据流"><a href="#理解-Vue-的单向-双向-数据流" class="headerlink" title="理解 Vue 的单向/双向 数据流"></a>理解 Vue 的单向/双向 数据流</h3><h4 id="首先了解一下数据绑定"><a href="#首先了解一下数据绑定" class="headerlink" title="首先了解一下数据绑定"></a>首先了解一下数据绑定</h4><p>什么是绑定？<br>比如当前href属性值取决于表达式school.url.toUpperCase()的结果，这两者之间就是有绑定关系，且通过v-bind指令完成数据绑定。</p>
+<h2 id="Vue-事件"><a href="#Vue-事件" class="headerlink" title="Vue 事件"></a>Vue 事件</h2><ol>
+<li>介绍<br>可以用 v-on 指令监听 DOM 事件，并在触发时运行一些 JavaScript 代码</li>
+<li>定义事件<br>语法：&lt;div&nbsp;v-on:事件名=’dosomething’&gt;<br>函数dosomething定义的位置：<br>要求定义mothds属性中</li>
+<li>事件：</li>
+<li>this指向：事件的this指向 当前组件实例对象 </li>
+<li>事件传递参数：事件传递参数  v-on:click=’canshu(1,2)’</li>
+<li>事件对象event：</li>
+<li>1 函数不带参数  第一个参数默认是事件对象 event </li>
+<li>2 函数带参数    事件对象需要手动传递 $event<br>v-on:事件名=’函数’<br>简写：<br>@事件名=’函数’</li>
+</ol>
+<hr>
+<h2 id="Vue-的生命周期方法有哪些-一般在哪一步发请求"><a href="#Vue-的生命周期方法有哪些-一般在哪一步发请求" class="headerlink" title="Vue 的生命周期方法有哪些 一般在哪一步发请求"></a>Vue 的生命周期方法有哪些 一般在哪一步发请求</h2><p><strong>生命周期</strong>：事物从诞生到消亡的过程<br>Vue生命周期：<br><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://s1.ax1x.com/2022/04/19/L06cp4.png"></p>
+<h2 id="v-if-和-v-show-的区别"><a href="#v-if-和-v-show-的区别" class="headerlink" title="v-if 和 v-show 的区别"></a>v-if 和 v-show 的区别</h2><p>v-if: 控制元素的渲染或者销毁<br>v-show:控制元素的 display:block/none</p>
+<blockquote>
+<p>场景：<br>频繁切换： v-show<br>初次渲染优化：v-if </p>
+</blockquote>
+<h2 id="Vue-修饰符有哪些"><a href="#Vue-修饰符有哪些" class="headerlink" title="Vue 修饰符有哪些"></a>Vue 修饰符有哪些</h2><h2 id="v-for-为什么要加-key"><a href="#v-for-为什么要加-key" class="headerlink" title="v-for 为什么要加 key"></a>v-for 为什么要加 key</h2><h2 id="理解-Vue-的单向-双向-数据流"><a href="#理解-Vue-的单向-双向-数据流" class="headerlink" title="理解 Vue 的单向/双向 数据流"></a>理解 Vue 的单向/双向 数据流</h2><h3 id="首先了解一下数据绑定"><a href="#首先了解一下数据绑定" class="headerlink" title="首先了解一下数据绑定"></a>首先了解一下数据绑定</h3><p>什么是绑定？<br>比如当前href属性值取决于表达式school.url.toUpperCase()的结果，这两者之间就是有绑定关系，且通过v-bind指令完成数据绑定。</p>
 <pre class="line-numbers language-none"><code class="language-none">&lt;a v-bind:href="school.url.toUpperCase()" v-bind:x="hello"&gt;点我去{{school.name}}学习&lt;/a&gt;
 <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<h4 id="v-bind-单向数据原理"><a href="#v-bind-单向数据原理" class="headerlink" title="v-bind 单向数据原理"></a>v-bind 单向数据原理</h4><p>前面学习的指令主要作用是将值插入到模板的内容当中<br>但除了内容需要动态来决定外，某些属性也希望动态来绑定<br><strong>作用：动态绑定属性</strong><br>缩写：**:**<br>预期：any (with argument) | Object (without argument)<br>参数：attrOrProp (optional)<br><strong>v-bind用于绑定一个或多个属性值，或者向另一个组件传递props值</strong>(这个学到Vue进阶时介绍)<br>在开发中，一般有哪些属性需要动态进行绑定呢？<br>比如图片的链接src、网站的链接href、动态绑定一些类、样式等等<br>例子：通过Vue实例中的data绑定元素的src和href，代码如下：</p>
-<h5 id="基本使用"><a href="#基本使用" class="headerlink" title="基本使用"></a>基本使用</h5><p>很多时候，我们希望动态的来切换class，比如：<br>当数据为某个状态时，字体显示红色。<br>当数据另一个状态时，字体显示黑色。</p>
+<h3 id="v-bind-单向数据原理"><a href="#v-bind-单向数据原理" class="headerlink" title="v-bind 单向数据原理"></a>v-bind 单向数据原理</h3><p>前面学习的指令主要作用是将值插入到模板的内容当中<br>但除了内容需要动态来决定外，某些属性也希望动态来绑定<br><strong>作用：动态绑定属性</strong><br>缩写：**:**<br>预期：any (with argument) | Object (without argument)<br>参数：attrOrProp (optional)<br><strong>v-bind用于绑定一个或多个属性值，或者向另一个组件传递props值</strong>(这个学到Vue进阶时介绍)<br>在开发中，一般有哪些属性需要动态进行绑定呢？<br>比如图片的链接src、网站的链接href、动态绑定一些类、样式等等<br>例子：通过Vue实例中的data绑定元素的src和href，代码如下：</p>
+<h4 id="基本使用"><a href="#基本使用" class="headerlink" title="基本使用"></a>基本使用</h4><p>很多时候，我们希望动态的来切换class，比如：<br>当数据为某个状态时，字体显示红色。<br>当数据另一个状态时，字体显示黑色。</p>
 <pre class="line-numbers language-none"><code class="language-none">&lt;div id="app"&gt;
   &lt;!-- 错误的做法: 这里不可以使用mustache语法--&gt;
   &lt;!--&lt;img src="{{imgURL}}" alt=""&gt;--&gt;
@@ -291,7 +614,7 @@
     }
   })
 &lt;/script&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h5 id="动态绑定class-对象语法"><a href="#动态绑定class-对象语法" class="headerlink" title="动态绑定class(对象语法)"></a>动态绑定class(对象语法)</h5><ul>
+<h4 id="v-bind动态绑定class-对象语法"><a href="#v-bind动态绑定class-对象语法" class="headerlink" title="v-bind动态绑定class(对象语法)"></a>v-bind动态绑定class(对象语法)</h4><ul>
 <li>绑定方式：对象语法<br>含义是:class后面跟的是一个对象</li>
 </ul>
 <ol>
@@ -328,7 +651,7 @@
     }
   })
 &lt;/script&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h5 id="动态绑定class-数组语法"><a href="#动态绑定class-数组语法" class="headerlink" title="动态绑定class(数组语法)"></a>动态绑定class(数组语法)</h5><ul>
+<h4 id="v-bind动态绑定class-数组语法"><a href="#v-bind动态绑定class-数组语法" class="headerlink" title="v-bind动态绑定class(数组语法)"></a>v-bind动态绑定class(数组语法)</h4><ul>
 <li>数组语法的含义是:class后面跟的是一个数组。</li>
 </ul>
 <ol>
@@ -359,7 +682,7 @@
     }
   })
 &lt;/script&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h5 id="小案例-点击li标签变色（默认第一li为红色）"><a href="#小案例-点击li标签变色（默认第一li为红色）" class="headerlink" title="小案例 点击li标签变色（默认第一li为红色）"></a>小案例 点击li标签变色（默认第一li为红色）</h5><p>分析：</p>
+<h4 id="小案例-点击li标签变色（默认第一li为红色）"><a href="#小案例-点击li标签变色（默认第一li为红色）" class="headerlink" title="小案例 点击li标签变色（默认第一li为红色）"></a>小案例 点击li标签变色（默认第一li为红色）</h4><p>分析：</p>
 <ol>
 <li>v-for绑定给li标签，同时v-on添加点击事件，并且li标签的class用v-bind动态绑定 </li>
 <li>使用v-for绑定到li标签上，自动遍历data中的数据，将下标（index）和每一项内容（item）用插值语法显示到页面</li>
@@ -397,8 +720,8 @@
 
 </li>
 </ol>
-<h5 id="v-bind绑定style-一"><a href="#v-bind绑定style-一" class="headerlink" title="v-bind绑定style 一"></a>v-bind绑定style 一</h5><p>利用v-bind:style来绑定一些CSS内联样式<br>在写CSS属性名的时候，比如font-size<br>可以使用驼峰式 (camelCase)  fontSize<br>或短横线分隔 (kebab-case，记得用单引号括起来) ‘font-size’</p>
-<h4 id="v-model-双向数据原理"><a href="#v-model-双向数据原理" class="headerlink" title="v-model 双向数据原理"></a>v-model 双向数据原理</h4><h4 id="Vue2-x响应式数据-双向绑定原理"><a href="#Vue2-x响应式数据-双向绑定原理" class="headerlink" title="Vue2.x响应式数据/双向绑定原理"></a>Vue2.x响应式数据/双向绑定原理</h4><p>整体思路是数据劫持+观察者模式<br>Vue 数据双向绑定主要是指：数据变化更新视图，视图变化更新数据。其中，View变化更新Data，可以通过事件监听的方式来实现，所以 Vue数据双向绑定的工作主要是如何根据Data变化更新View。<br><strong>Vue中有两种数据绑定的方式：</strong></p>
+<h4 id="v-bind绑定style-一"><a href="#v-bind绑定style-一" class="headerlink" title="v-bind绑定style 一"></a>v-bind绑定style 一</h4><p>利用v-bind:style来绑定一些CSS内联样式<br>在写CSS属性名的时候，比如font-size<br>可以使用驼峰式 (camelCase)  fontSize<br>或短横线分隔 (kebab-case，记得用单引号括起来) ‘font-size’</p>
+<h2 id="v-model-双向数据原理"><a href="#v-model-双向数据原理" class="headerlink" title="v-model 双向数据原理"></a>v-model 双向数据原理</h2><h2 id="Vue2-x响应式数据-双向绑定原理"><a href="#Vue2-x响应式数据-双向绑定原理" class="headerlink" title="Vue2.x响应式数据/双向绑定原理"></a>Vue2.x响应式数据/双向绑定原理</h2><p>整体思路是数据劫持+观察者模式<br>Vue 数据双向绑定主要是指：数据变化更新视图，视图变化更新数据。其中，View变化更新Data，可以通过事件监听的方式来实现，所以 Vue数据双向绑定的工作主要是如何根据Data变化更新View。<br><strong>Vue中有两种数据绑定的方式：</strong></p>
 <ol>
 <li>单向绑定(v-bind)：数据只能从data流向页面。</li>
 <li>双向绑定(v-model)：数据不仅能从data流向页面，还可以从页面流向data。<br>备注：</li>
@@ -427,7 +750,7 @@ Vue.config.productionTip = false //阻止 vue 在启动时生成生产提示。
 
 </li>
 </ol>
-<h3 id="虚拟-DOM-是什么-有什么优缺点"><a href="#虚拟-DOM-是什么-有什么优缺点" class="headerlink" title="虚拟 DOM 是什么 有什么优缺点"></a>虚拟 DOM 是什么 有什么优缺点</h3><h3 id="MVVM"><a href="#MVVM" class="headerlink" title="MVVM"></a>MVVM</h3><p>全称： Model-View-ViewModel ， Model 表示数据模型层。 view 表示视图层， ViewModel 是 View 和 Model 层的桥梁，数据绑定到 viewModel 层并自动渲染到页面中，视图变化通知 viewModel 层更新数据。</p>
+<h2 id="虚拟-DOM-是什么-有什么优缺点"><a href="#虚拟-DOM-是什么-有什么优缺点" class="headerlink" title="虚拟 DOM 是什么 有什么优缺点"></a>虚拟 DOM 是什么 有什么优缺点</h2><h2 id="MVVM"><a href="#MVVM" class="headerlink" title="MVVM"></a>MVVM</h2><p>全称： Model-View-ViewModel ， Model 表示数据模型层。 view 表示视图层， ViewModel 是 View 和 Model 层的桥梁，数据绑定到 viewModel 层并自动渲染到页面中，视图变化通知 viewModel 层更新数据。</p>
 <ul>
 <li>Model层：</li>
 </ul>
@@ -473,7 +796,7 @@ Vue.config.productionTip = false //阻止 vue 在启动时生成生产提示。
 	console.log(vm)
 &lt;/script&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<h3 id="Vue的数据代理"><a href="#Vue的数据代理" class="headerlink" title="Vue的数据代理"></a>Vue的数据代理</h3><h4 id="首先学习下-Object-defineProperty-方法"><a href="#首先学习下-Object-defineProperty-方法" class="headerlink" title="首先学习下 Object.defineProperty()方法"></a>首先学习下 Object.defineProperty()方法</h4><p>Object.defineProperty() 方法直接在一个对象上定义一个新属性，或者修改一个已经存在的属性， 并返回这个对象。<br><strong>defineProperty()参数</strong></p>
+<h2 id="Vue的数据代理"><a href="#Vue的数据代理" class="headerlink" title="Vue的数据代理"></a>Vue的数据代理</h2><h3 id="首先学习下-Object-defineProperty-方法"><a href="#首先学习下-Object-defineProperty-方法" class="headerlink" title="首先学习下 Object.defineProperty()方法"></a>首先学习下 Object.defineProperty()方法</h3><p>Object.defineProperty() 方法直接在一个对象上定义一个新属性，或者修改一个已经存在的属性， 并返回这个对象。<br><strong>defineProperty()参数</strong></p>
 <pre class="line-numbers language-none"><code class="language-none">Object.defineProperty(obj, prop, descriptor)<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <ul>
 <li>obj 需要定义属性的对象</li>
@@ -508,8 +831,7 @@ Object.defineProperty(person, 'age', {
 // Object.keys方法传入一个对象作为参数，可以把传入对象所有属性的属性名提取出来变成数组
 console.log(person)
 &lt;/script&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<h4 id="什么是数据代理"><a href="#什么是数据代理" class="headerlink" title="什么是数据代理"></a>什么是数据代理</h4><p>数据代理：通过一个对象代理对另一个对象中属性的操作（读/写）</p>
+<h2 id="Vue中的数据代理"><a href="#Vue中的数据代理" class="headerlink" title="Vue中的数据代理"></a>Vue中的数据代理</h2><h3 id="什么是数据代理"><a href="#什么是数据代理" class="headerlink" title="什么是数据代理"></a>什么是数据代理</h3><p>数据代理：通过一个对象代理对另一个对象中属性的操作（读/写）</p>
 <pre class="line-numbers language-none"><code class="language-none">&lt;script type="text/javascript" &gt;
 	let obj = {
 		x:100 
@@ -527,7 +849,6 @@ console.log(person)
 	})
 &lt;/script&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<h4 id="Vue中的数据代理"><a href="#Vue中的数据代理" class="headerlink" title="Vue中的数据代理"></a>Vue中的数据代理</h4><p>###</p>
 <hr>
 <h2 id="vue常用ui库"><a href="#vue常用ui库" class="headerlink" title="vue常用ui库"></a>vue常用ui库</h2><p><strong>移动端</strong></p>
 <ul>
@@ -542,7 +863,7 @@ console.log(person)
 <li>Avue (<a target="_blank" rel="noopener" href="https://avuejs.com/">https://avuejs.com/</a>)</li>
 </ul>
 <h2 id="常用webpack配置"><a href="#常用webpack配置" class="headerlink" title="常用webpack配置"></a>常用webpack配置</h2><p><strong>待更新。。。</strong></p>
-</article><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E5%AD%A6%E4%B9%A0/">学习</a><a class="post-meta__tags" href="/tags/Vue/">Vue</a></div><div class="post_share"><div class="social-share" data-image="https://images.alphacoders.com/101/1014461.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button button--animated"><i class="fas fa-qrcode"></i> 打赏</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="https://s1.ax1x.com/2022/04/13/LQAktI.jpg" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://s1.ax1x.com/2022/04/13/LQAktI.jpg" alt="微信"/></a><div class="post-qr-code-desc">微信</div></li><li class="reward-item"><a href="https://s1.ax1x.com/2022/04/13/LQA1Nn.jpg" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://s1.ax1x.com/2022/04/13/LQA1Nn.jpg" alt="支付宝"/></a><div class="post-qr-code-desc">支付宝</div></li></ul></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/posts/7.html"><img class="prev-cover" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://images2.alphacoders.com/105/1053279.png" onerror="onerror=null;src='https://cdn.jsdelivr.net/gh/zhaoze-jpg/Xianqi@main/img/friend_404.gif'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">JS基础知识</div></div></a></div><div class="next-post pull-right"><a href="/posts/4.html"><img class="next-cover" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://images8.alphacoders.com/679/679728.jpg" onerror="onerror=null;src='https://cdn.jsdelivr.net/gh/zhaoze-jpg/Xianqi@main/img/friend_404.gif'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">axios学习</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span> 相关推荐</span></div><div class="relatedPosts-list"><div><a href="/posts/6.html" title="Vue进阶知识学习"><img class="cover" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://images3.alphacoders.com/108/1082529.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-04-18</div><div class="title">Vue进阶知识学习</div></div></a></div><div><a href="/posts/4.html" title="axios学习"><img class="cover" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://images8.alphacoders.com/679/679728.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-04-17</div><div class="title">axios学习</div></div></a></div><div><a href="/posts/2.html" title="Ajax学习"><img class="cover" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://images.alphacoders.com/746/746111.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-04-14</div><div class="title">Ajax学习</div></div></a></div><div><a href="/posts/3.html" title="Promise学习"><img class="cover" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://images8.alphacoders.com/736/736451.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-04-14</div><div class="title">Promise学习</div></div></a></div><div><a href="/posts/8.html" title="JS进阶学习"><img class="cover" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://images8.alphacoders.com/120/1206602.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-04-18</div><div class="title">JS进阶学习</div></div></a></div><div><a href="/posts/9.html" title="Vue路由拦截"><img class="cover" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://images8.alphacoders.com/120/1206602.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-04-21</div><div class="title">Vue路由拦截</div></div></a></div></div></div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="lv-container" data-id="city" data-uid="MTAyMC81NjA5Ni8zMjU1OQ=="></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://s1.ax1x.com/2022/04/13/LQEmP1.jpg" onerror="this.onerror=null;this.src='https://cdn.jsdelivr.net/gh/zhaoze-jpg/Xianqi@main/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Zimo</div><div class="author-info__description">人要接受自己的有限性，人的逻辑、理性、阅读都是有限的，整个人就是在偏见之中。人这一生就是在走出偏见。</div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">10</div></a></div><div class="card-info-data-item is-center"><a href="/tags/"><div class="headline">标签</div><div class="length-num">7</div></a></div><div class="card-info-data-item is-center"><a href="/categories/"><div class="headline">分类</div><div class="length-num">2</div></a></div></div><a class="button--animated" id="card-info-btn" href="https://wuzimo233.github.io"><i class="fa-solid fa-house-chimney"></i><span>个人主页</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/wuzimo233" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="https://space.bilibili.com/17723284" target="_blank" title="bilibili"><i class="fa-brands fa-bilibili"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span></div><div class="announcement_content">叶上初阳干宿雨，水面清圆，一一风荷举</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Vue-%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E7%82%B9"><span class="toc-number">1.</span> <span class="toc-text">Vue 基础知识点</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#vue%E7%9A%84%E5%AE%89%E8%A3%85"><span class="toc-number">1.1.</span> <span class="toc-text">vue的安装</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%B0%88%E8%B0%88%E5%AF%B9Vue%E7%9A%84%E7%90%86%E8%A7%A3"><span class="toc-number">1.2.</span> <span class="toc-text">谈谈对Vue的理解</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#vue%E7%9A%84%E4%BC%98%E7%82%B9"><span class="toc-number">1.3.</span> <span class="toc-text">vue的优点</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Vue-%E7%9A%84%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E6%96%B9%E6%B3%95%E6%9C%89%E5%93%AA%E4%BA%9B-%E4%B8%80%E8%88%AC%E5%9C%A8%E5%93%AA%E4%B8%80%E6%AD%A5%E5%8F%91%E8%AF%B7%E6%B1%82"><span class="toc-number">1.4.</span> <span class="toc-text">Vue 的生命周期方法有哪些 一般在哪一步发请求</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#vue%E5%9F%BA%E6%9C%AC%E6%8C%87%E4%BB%A4"><span class="toc-number">1.5.</span> <span class="toc-text">vue基本指令</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%8F%92%E5%80%BC%E6%93%8D%E4%BD%9C"><span class="toc-number">1.5.1.</span> <span class="toc-text">插值操作</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#v-once"><span class="toc-number">1.5.2.</span> <span class="toc-text">v-once</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#v-html"><span class="toc-number">1.5.3.</span> <span class="toc-text">v-html</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#v-text"><span class="toc-number">1.5.4.</span> <span class="toc-text">v-text</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#v-pre"><span class="toc-number">1.5.5.</span> <span class="toc-text">v-pre</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#v-cloak"><span class="toc-number">1.5.6.</span> <span class="toc-text">v-cloak</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#v-if-%E5%92%8C-v-show-%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="toc-number">1.6.</span> <span class="toc-text">v-if 和 v-show 的区别</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Vue-%E4%BF%AE%E9%A5%B0%E7%AC%A6%E6%9C%89%E5%93%AA%E4%BA%9B"><span class="toc-number">1.7.</span> <span class="toc-text">Vue 修饰符有哪些</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#v-for-%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E5%8A%A0-key"><span class="toc-number">1.8.</span> <span class="toc-text">v-for 为什么要加 key</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%90%86%E8%A7%A3-Vue-%E7%9A%84%E5%8D%95%E5%90%91-%E5%8F%8C%E5%90%91-%E6%95%B0%E6%8D%AE%E6%B5%81"><span class="toc-number">1.9.</span> <span class="toc-text">理解 Vue 的单向&#x2F;双向 数据流</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%A6%96%E5%85%88%E4%BA%86%E8%A7%A3%E4%B8%80%E4%B8%8B%E6%95%B0%E6%8D%AE%E7%BB%91%E5%AE%9A"><span class="toc-number">1.9.1.</span> <span class="toc-text">首先了解一下数据绑定</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#v-bind-%E5%8D%95%E5%90%91%E6%95%B0%E6%8D%AE%E5%8E%9F%E7%90%86"><span class="toc-number">1.9.2.</span> <span class="toc-text">v-bind 单向数据原理</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8"><span class="toc-number">1.9.2.1.</span> <span class="toc-text">基本使用</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%8A%A8%E6%80%81%E7%BB%91%E5%AE%9Aclass-%E5%AF%B9%E8%B1%A1%E8%AF%AD%E6%B3%95"><span class="toc-number">1.9.2.2.</span> <span class="toc-text">动态绑定class(对象语法)</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%8A%A8%E6%80%81%E7%BB%91%E5%AE%9Aclass-%E6%95%B0%E7%BB%84%E8%AF%AD%E6%B3%95"><span class="toc-number">1.9.2.3.</span> <span class="toc-text">动态绑定class(数组语法)</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%B0%8F%E6%A1%88%E4%BE%8B-%E7%82%B9%E5%87%BBli%E6%A0%87%E7%AD%BE%E5%8F%98%E8%89%B2%EF%BC%88%E9%BB%98%E8%AE%A4%E7%AC%AC%E4%B8%80li%E4%B8%BA%E7%BA%A2%E8%89%B2%EF%BC%89"><span class="toc-number">1.9.2.4.</span> <span class="toc-text">小案例 点击li标签变色（默认第一li为红色）</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#v-bind%E7%BB%91%E5%AE%9Astyle-%E4%B8%80"><span class="toc-number">1.9.2.5.</span> <span class="toc-text">v-bind绑定style 一</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#v-model-%E5%8F%8C%E5%90%91%E6%95%B0%E6%8D%AE%E5%8E%9F%E7%90%86"><span class="toc-number">1.9.3.</span> <span class="toc-text">v-model 双向数据原理</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Vue2-x%E5%93%8D%E5%BA%94%E5%BC%8F%E6%95%B0%E6%8D%AE-%E5%8F%8C%E5%90%91%E7%BB%91%E5%AE%9A%E5%8E%9F%E7%90%86"><span class="toc-number">1.9.4.</span> <span class="toc-text">Vue2.x响应式数据&#x2F;双向绑定原理</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%99%9A%E6%8B%9F-DOM-%E6%98%AF%E4%BB%80%E4%B9%88-%E6%9C%89%E4%BB%80%E4%B9%88%E4%BC%98%E7%BC%BA%E7%82%B9"><span class="toc-number">1.10.</span> <span class="toc-text">虚拟 DOM 是什么 有什么优缺点</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#MVVM"><span class="toc-number">1.11.</span> <span class="toc-text">MVVM</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Vue%E7%9A%84%E6%95%B0%E6%8D%AE%E4%BB%A3%E7%90%86"><span class="toc-number">1.12.</span> <span class="toc-text">Vue的数据代理</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%A6%96%E5%85%88%E5%AD%A6%E4%B9%A0%E4%B8%8B-Object-defineProperty-%E6%96%B9%E6%B3%95"><span class="toc-number">1.12.1.</span> <span class="toc-text">首先学习下 Object.defineProperty()方法</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF%E6%95%B0%E6%8D%AE%E4%BB%A3%E7%90%86"><span class="toc-number">1.12.2.</span> <span class="toc-text">什么是数据代理</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Vue%E4%B8%AD%E7%9A%84%E6%95%B0%E6%8D%AE%E4%BB%A3%E7%90%86"><span class="toc-number">1.12.3.</span> <span class="toc-text">Vue中的数据代理</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#vue%E5%B8%B8%E7%94%A8ui%E5%BA%93"><span class="toc-number">2.</span> <span class="toc-text">vue常用ui库</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8webpack%E9%85%8D%E7%BD%AE"><span class="toc-number">3.</span> <span class="toc-text">常用webpack配置</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/posts/9.html" title="Vue路由拦截"><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://images8.alphacoders.com/120/1206602.png" onerror="this.onerror=null;this.src='https://cdn.jsdelivr.net/gh/zhaoze-jpg/Xianqi@main/img/friend_404.gif'" alt="Vue路由拦截"/></a><div class="content"><a class="title" href="/posts/9.html" title="Vue路由拦截">Vue路由拦截</a><time datetime="2022-04-20T17:28:00.000Z" title="发表于 2022-04-21 01:28:00">2022-04-21</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/10.html" title="TEST"><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://images8.alphacoders.com/120/1206602.png" onerror="this.onerror=null;this.src='https://cdn.jsdelivr.net/gh/zhaoze-jpg/Xianqi@main/img/friend_404.gif'" alt="TEST"/></a><div class="content"><a class="title" href="/posts/10.html" title="TEST">TEST</a><time datetime="2022-04-20T08:15:00.000Z" title="发表于 2022-04-20 16:15:00">2022-04-20</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/8.html" title="JS进阶学习"><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://images8.alphacoders.com/120/1206602.png" onerror="this.onerror=null;this.src='https://cdn.jsdelivr.net/gh/zhaoze-jpg/Xianqi@main/img/friend_404.gif'" alt="JS进阶学习"/></a><div class="content"><a class="title" href="/posts/8.html" title="JS进阶学习">JS进阶学习</a><time datetime="2022-04-18T13:53:00.000Z" title="发表于 2022-04-18 21:53:00">2022-04-18</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/6.html" title="Vue进阶知识学习"><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://images3.alphacoders.com/108/1082529.png" onerror="this.onerror=null;this.src='https://cdn.jsdelivr.net/gh/zhaoze-jpg/Xianqi@main/img/friend_404.gif'" alt="Vue进阶知识学习"/></a><div class="content"><a class="title" href="/posts/6.html" title="Vue进阶知识学习">Vue进阶知识学习</a><time datetime="2022-04-18T13:42:00.000Z" title="发表于 2022-04-18 21:42:00">2022-04-18</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/7.html" title="JS基础知识"><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://images2.alphacoders.com/105/1053279.png" onerror="this.onerror=null;this.src='https://cdn.jsdelivr.net/gh/zhaoze-jpg/Xianqi@main/img/friend_404.gif'" alt="JS基础知识"/></a><div class="content"><a class="title" href="/posts/7.html" title="JS基础知识">JS基础知识</a><time datetime="2022-04-17T17:00:00.000Z" title="发表于 2022-04-18 01:00:00">2022-04-18</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2022  <i id="heartbeat" class="fa fas fa-heartbeat"></i> Zimo</div><div class="footer_custom_text">欢迎同志 😗!</div></div><head><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/HCLonely/images@master/others/heartbeat.min.css"></head></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="chat_btn" type="button" title="rightside.chat_btn"><i class="fas fa-sms"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><div class="search-dialog__title" id="local-search-title">本地搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div></div><hr/><div id="local-search-results"></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/medium-zoom/dist/medium-zoom.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><script>function panguFn () {
+</article><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E5%AD%A6%E4%B9%A0/">学习</a><a class="post-meta__tags" href="/tags/Vue/">Vue</a></div><div class="post_share"><div class="social-share" data-image="https://images.alphacoders.com/101/1014461.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button button--animated"><i class="fas fa-qrcode"></i> 打赏</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="https://s1.ax1x.com/2022/04/13/LQAktI.jpg" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://s1.ax1x.com/2022/04/13/LQAktI.jpg" alt="微信"/></a><div class="post-qr-code-desc">微信</div></li><li class="reward-item"><a href="https://s1.ax1x.com/2022/04/13/LQA1Nn.jpg" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://s1.ax1x.com/2022/04/13/LQA1Nn.jpg" alt="支付宝"/></a><div class="post-qr-code-desc">支付宝</div></li></ul></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/posts/7.html"><img class="prev-cover" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://images2.alphacoders.com/105/1053279.png" onerror="onerror=null;src='https://cdn.jsdelivr.net/gh/zhaoze-jpg/Xianqi@main/img/friend_404.gif'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">JS基础知识</div></div></a></div><div class="next-post pull-right"><a href="/posts/4.html"><img class="next-cover" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://images8.alphacoders.com/679/679728.jpg" onerror="onerror=null;src='https://cdn.jsdelivr.net/gh/zhaoze-jpg/Xianqi@main/img/friend_404.gif'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">axios学习</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span> 相关推荐</span></div><div class="relatedPosts-list"><div><a href="/posts/6.html" title="Vue进阶知识学习"><img class="cover" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://images3.alphacoders.com/108/1082529.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-04-18</div><div class="title">Vue进阶知识学习</div></div></a></div><div><a href="/posts/2.html" title="Ajax学习"><img class="cover" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://images.alphacoders.com/746/746111.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-04-14</div><div class="title">Ajax学习</div></div></a></div><div><a href="/posts/3.html" title="Promise学习"><img class="cover" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://images8.alphacoders.com/736/736451.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-04-14</div><div class="title">Promise学习</div></div></a></div><div><a href="/posts/4.html" title="axios学习"><img class="cover" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://images8.alphacoders.com/679/679728.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-04-17</div><div class="title">axios学习</div></div></a></div><div><a href="/posts/7.html" title="JS基础知识"><img class="cover" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://images2.alphacoders.com/105/1053279.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-04-18</div><div class="title">JS基础知识</div></div></a></div><div><a href="/posts/8.html" title="JS进阶学习"><img class="cover" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://images8.alphacoders.com/120/1206602.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-04-18</div><div class="title">JS进阶学习</div></div></a></div></div></div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="lv-container" data-id="city" data-uid="MTAyMC81NjA5Ni8zMjU1OQ=="></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://s1.ax1x.com/2022/04/13/LQEmP1.jpg" onerror="this.onerror=null;this.src='https://cdn.jsdelivr.net/gh/zhaoze-jpg/Xianqi@main/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Zimo</div><div class="author-info__description">人要接受自己的有限性，人的逻辑、理性、阅读都是有限的，整个人就是在偏见之中。人这一生就是在走出偏见。</div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">10</div></a></div><div class="card-info-data-item is-center"><a href="/tags/"><div class="headline">标签</div><div class="length-num">7</div></a></div><div class="card-info-data-item is-center"><a href="/categories/"><div class="headline">分类</div><div class="length-num">2</div></a></div></div><a class="button--animated" id="card-info-btn" href="https://wuzimo233.github.io"><i class="fa-solid fa-house-chimney"></i><span>个人主页</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/wuzimo233" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="https://space.bilibili.com/17723284" target="_blank" title="bilibili"><i class="fa-brands fa-bilibili"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span></div><div class="announcement_content">叶上初阳干宿雨，水面清圆，一一风荷举</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Vue-%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E7%82%B9"><span class="toc-number">1.</span> <span class="toc-text">Vue 基础知识点</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#vue%E7%9A%84%E5%AE%89%E8%A3%85"><span class="toc-number">1.1.</span> <span class="toc-text">vue的安装</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Vue%E4%BB%8B%E7%BB%8D"><span class="toc-number">1.2.</span> <span class="toc-text">Vue介绍</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#vue%E7%9A%84%E4%BC%98%E7%BC%BA%E7%82%B9"><span class="toc-number">1.3.</span> <span class="toc-text">vue的优缺点</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Vue%E7%9A%84%E4%BD%BF%E7%94%A8"><span class="toc-number">1.4.</span> <span class="toc-text">Vue的使用</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B1%80%E9%83%A8%E4%BD%BF%E7%94%A8Vue"><span class="toc-number">1.4.1.</span> <span class="toc-text">局部使用Vue</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%90%AD%E5%BB%BAvue%E9%A1%B9%E7%9B%AE"><span class="toc-number">1.4.2.</span> <span class="toc-text">搭建vue项目</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%9B%AE%E5%BD%95%E7%BB%93%E6%9E%84"><span class="toc-number">1.5.</span> <span class="toc-text">目录结构</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Vue%E7%BB%84%E4%BB%B6%E7%BB%84%E6%88%90"><span class="toc-number">1.6.</span> <span class="toc-text">Vue组件组成</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#vue%E5%9F%BA%E6%9C%AC%E6%8C%87%E4%BB%A4"><span class="toc-number">1.7.</span> <span class="toc-text">vue基本指令</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8F%92%E5%80%BC%E6%93%8D%E4%BD%9C-%E6%A8%A1%E6%9D%BF%E8%AF%AD%E6%B3%95"><span class="toc-number">1.7.1.</span> <span class="toc-text">插值操作 (模板语法)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#v-once"><span class="toc-number">1.7.2.</span> <span class="toc-text">v-once</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#v-html-%E5%8E%9F%E7%94%9FHTML"><span class="toc-number">1.7.3.</span> <span class="toc-text">v-html -原生HTML</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#v-if-%E6%9D%A1%E4%BB%B6%E6%B8%B2%E6%9F%93-%EF%BC%88v-else%E3%80%81v-else-if%EF%BC%89"><span class="toc-number">1.7.4.</span> <span class="toc-text">v-if  -条件渲染 （v-else、v-else-if）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#v-show"><span class="toc-number">1.7.5.</span> <span class="toc-text">v-show</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#v-for-%E5%88%97%E8%A1%A8%E6%B8%B2%E6%9F%93"><span class="toc-number">1.7.6.</span> <span class="toc-text">v-for  -列表渲染</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#v-text"><span class="toc-number">1.7.7.</span> <span class="toc-text">v-text</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#v-pre"><span class="toc-number">1.7.8.</span> <span class="toc-text">v-pre</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#v-cloak"><span class="toc-number">1.7.9.</span> <span class="toc-text">v-cloak</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Vue-%E4%BA%8B%E4%BB%B6"><span class="toc-number">1.8.</span> <span class="toc-text">Vue 事件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Vue-%E7%9A%84%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E6%96%B9%E6%B3%95%E6%9C%89%E5%93%AA%E4%BA%9B-%E4%B8%80%E8%88%AC%E5%9C%A8%E5%93%AA%E4%B8%80%E6%AD%A5%E5%8F%91%E8%AF%B7%E6%B1%82"><span class="toc-number">1.9.</span> <span class="toc-text">Vue 的生命周期方法有哪些 一般在哪一步发请求</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#v-if-%E5%92%8C-v-show-%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="toc-number">1.10.</span> <span class="toc-text">v-if 和 v-show 的区别</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Vue-%E4%BF%AE%E9%A5%B0%E7%AC%A6%E6%9C%89%E5%93%AA%E4%BA%9B"><span class="toc-number">1.11.</span> <span class="toc-text">Vue 修饰符有哪些</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#v-for-%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E5%8A%A0-key"><span class="toc-number">1.12.</span> <span class="toc-text">v-for 为什么要加 key</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%90%86%E8%A7%A3-Vue-%E7%9A%84%E5%8D%95%E5%90%91-%E5%8F%8C%E5%90%91-%E6%95%B0%E6%8D%AE%E6%B5%81"><span class="toc-number">1.13.</span> <span class="toc-text">理解 Vue 的单向&#x2F;双向 数据流</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%A6%96%E5%85%88%E4%BA%86%E8%A7%A3%E4%B8%80%E4%B8%8B%E6%95%B0%E6%8D%AE%E7%BB%91%E5%AE%9A"><span class="toc-number">1.13.1.</span> <span class="toc-text">首先了解一下数据绑定</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#v-bind-%E5%8D%95%E5%90%91%E6%95%B0%E6%8D%AE%E5%8E%9F%E7%90%86"><span class="toc-number">1.13.2.</span> <span class="toc-text">v-bind 单向数据原理</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8"><span class="toc-number">1.13.2.1.</span> <span class="toc-text">基本使用</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#v-bind%E5%8A%A8%E6%80%81%E7%BB%91%E5%AE%9Aclass-%E5%AF%B9%E8%B1%A1%E8%AF%AD%E6%B3%95"><span class="toc-number">1.13.2.2.</span> <span class="toc-text">v-bind动态绑定class(对象语法)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#v-bind%E5%8A%A8%E6%80%81%E7%BB%91%E5%AE%9Aclass-%E6%95%B0%E7%BB%84%E8%AF%AD%E6%B3%95"><span class="toc-number">1.13.2.3.</span> <span class="toc-text">v-bind动态绑定class(数组语法)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%B0%8F%E6%A1%88%E4%BE%8B-%E7%82%B9%E5%87%BBli%E6%A0%87%E7%AD%BE%E5%8F%98%E8%89%B2%EF%BC%88%E9%BB%98%E8%AE%A4%E7%AC%AC%E4%B8%80li%E4%B8%BA%E7%BA%A2%E8%89%B2%EF%BC%89"><span class="toc-number">1.13.2.4.</span> <span class="toc-text">小案例 点击li标签变色（默认第一li为红色）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#v-bind%E7%BB%91%E5%AE%9Astyle-%E4%B8%80"><span class="toc-number">1.13.2.5.</span> <span class="toc-text">v-bind绑定style 一</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#v-model-%E5%8F%8C%E5%90%91%E6%95%B0%E6%8D%AE%E5%8E%9F%E7%90%86"><span class="toc-number">1.14.</span> <span class="toc-text">v-model 双向数据原理</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Vue2-x%E5%93%8D%E5%BA%94%E5%BC%8F%E6%95%B0%E6%8D%AE-%E5%8F%8C%E5%90%91%E7%BB%91%E5%AE%9A%E5%8E%9F%E7%90%86"><span class="toc-number">1.15.</span> <span class="toc-text">Vue2.x响应式数据&#x2F;双向绑定原理</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%99%9A%E6%8B%9F-DOM-%E6%98%AF%E4%BB%80%E4%B9%88-%E6%9C%89%E4%BB%80%E4%B9%88%E4%BC%98%E7%BC%BA%E7%82%B9"><span class="toc-number">1.16.</span> <span class="toc-text">虚拟 DOM 是什么 有什么优缺点</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#MVVM"><span class="toc-number">1.17.</span> <span class="toc-text">MVVM</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Vue%E7%9A%84%E6%95%B0%E6%8D%AE%E4%BB%A3%E7%90%86"><span class="toc-number">1.18.</span> <span class="toc-text">Vue的数据代理</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%A6%96%E5%85%88%E5%AD%A6%E4%B9%A0%E4%B8%8B-Object-defineProperty-%E6%96%B9%E6%B3%95"><span class="toc-number">1.18.1.</span> <span class="toc-text">首先学习下 Object.defineProperty()方法</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Vue%E4%B8%AD%E7%9A%84%E6%95%B0%E6%8D%AE%E4%BB%A3%E7%90%86"><span class="toc-number">1.19.</span> <span class="toc-text">Vue中的数据代理</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF%E6%95%B0%E6%8D%AE%E4%BB%A3%E7%90%86"><span class="toc-number">1.19.1.</span> <span class="toc-text">什么是数据代理</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#vue%E5%B8%B8%E7%94%A8ui%E5%BA%93"><span class="toc-number">1.20.</span> <span class="toc-text">vue常用ui库</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8webpack%E9%85%8D%E7%BD%AE"><span class="toc-number">1.21.</span> <span class="toc-text">常用webpack配置</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/posts/9.html" title="Vue路由拦截"><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://images8.alphacoders.com/120/1206602.png" onerror="this.onerror=null;this.src='https://cdn.jsdelivr.net/gh/zhaoze-jpg/Xianqi@main/img/friend_404.gif'" alt="Vue路由拦截"/></a><div class="content"><a class="title" href="/posts/9.html" title="Vue路由拦截">Vue路由拦截</a><time datetime="2022-04-20T17:28:00.000Z" title="发表于 2022-04-21 01:28:00">2022-04-21</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/10.html" title="TEST"><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://images8.alphacoders.com/120/1206602.png" onerror="this.onerror=null;this.src='https://cdn.jsdelivr.net/gh/zhaoze-jpg/Xianqi@main/img/friend_404.gif'" alt="TEST"/></a><div class="content"><a class="title" href="/posts/10.html" title="TEST">TEST</a><time datetime="2022-04-20T08:15:00.000Z" title="发表于 2022-04-20 16:15:00">2022-04-20</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/8.html" title="JS进阶学习"><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://images8.alphacoders.com/120/1206602.png" onerror="this.onerror=null;this.src='https://cdn.jsdelivr.net/gh/zhaoze-jpg/Xianqi@main/img/friend_404.gif'" alt="JS进阶学习"/></a><div class="content"><a class="title" href="/posts/8.html" title="JS进阶学习">JS进阶学习</a><time datetime="2022-04-18T13:53:00.000Z" title="发表于 2022-04-18 21:53:00">2022-04-18</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/6.html" title="Vue进阶知识学习"><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://images3.alphacoders.com/108/1082529.png" onerror="this.onerror=null;this.src='https://cdn.jsdelivr.net/gh/zhaoze-jpg/Xianqi@main/img/friend_404.gif'" alt="Vue进阶知识学习"/></a><div class="content"><a class="title" href="/posts/6.html" title="Vue进阶知识学习">Vue进阶知识学习</a><time datetime="2022-04-18T13:42:00.000Z" title="发表于 2022-04-18 21:42:00">2022-04-18</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/7.html" title="JS基础知识"><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://images2.alphacoders.com/105/1053279.png" onerror="this.onerror=null;this.src='https://cdn.jsdelivr.net/gh/zhaoze-jpg/Xianqi@main/img/friend_404.gif'" alt="JS基础知识"/></a><div class="content"><a class="title" href="/posts/7.html" title="JS基础知识">JS基础知识</a><time datetime="2022-04-17T17:00:00.000Z" title="发表于 2022-04-18 01:00:00">2022-04-18</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2022  <i id="heartbeat" class="fa fas fa-heartbeat"></i> Zimo</div><div class="footer_custom_text">欢迎同志 😗!</div></div><head><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/HCLonely/images@master/others/heartbeat.min.css"></head></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="chat_btn" type="button" title="rightside.chat_btn"><i class="fas fa-sms"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><div class="search-dialog__title" id="local-search-title">本地搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div></div><hr/><div id="local-search-results"></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/medium-zoom/dist/medium-zoom.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><script>function panguFn () {
   if (typeof pangu === 'object') pangu.autoSpacingPage()
   else {
     getScript('https://cdn.jsdelivr.net/npm/pangu/dist/browser/pangu.min.js')
