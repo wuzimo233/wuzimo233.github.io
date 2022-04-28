@@ -2,9 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://wuzimo233.github.io/posts/6.html</loc>
+    
+    <lastmod>2022-04-27</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://wuzimo233.github.io/posts/11.html</loc>
+    
+    <lastmod>2022-04-27</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://wuzimo233.github.io/posts/5.html</loc>
     
-    <lastmod>2022-04-24</lastmod>
+    <lastmod>2022-04-26</lastmod>
     
   </url>
   
@@ -24,13 +38,6 @@
   
   <url>
     <loc>https://wuzimo233.github.io/posts/10.html</loc>
-    
-    <lastmod>2022-04-20</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://wuzimo233.github.io/posts/6.html</loc>
     
     <lastmod>2022-04-20</lastmod>
     
@@ -172,7 +179,7 @@
 
   <url>
     <loc>https://wuzimo233.github.io/</loc>
-    <lastmod>2022-04-24</lastmod>
+    <lastmod>2022-04-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -180,49 +187,56 @@
   
   <url>
     <loc>https://wuzimo233.github.io/tags/%E7%94%9F%E6%B4%BB/</loc>
-    <lastmod>2022-04-24</lastmod>
+    <lastmod>2022-04-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://wuzimo233.github.io/tags/%E5%AD%A6%E4%B9%A0/</loc>
-    <lastmod>2022-04-24</lastmod>
+    <lastmod>2022-04-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://wuzimo233.github.io/tags/Ajax/</loc>
-    <lastmod>2022-04-24</lastmod>
+    <lastmod>2022-04-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://wuzimo233.github.io/tags/Promise/</loc>
-    <lastmod>2022-04-24</lastmod>
+    <lastmod>2022-04-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://wuzimo233.github.io/tags/Axios/</loc>
-    <lastmod>2022-04-24</lastmod>
+    <lastmod>2022-04-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://wuzimo233.github.io/tags/Vue/</loc>
-    <lastmod>2022-04-24</lastmod>
+    <lastmod>2022-04-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://wuzimo233.github.io/tags/JS/</loc>
-    <lastmod>2022-04-24</lastmod>
+    <lastmod>2022-04-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://wuzimo233.github.io/tags/%E6%A1%88%E4%BE%8B/</loc>
+    <lastmod>2022-04-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -231,14 +245,14 @@
   
   <url>
     <loc>https://wuzimo233.github.io/categories/%E6%84%9F%E6%83%B3/</loc>
-    <lastmod>2022-04-24</lastmod>
+    <lastmod>2022-04-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://wuzimo233.github.io/categories/%E5%89%8D%E7%AB%AF/</loc>
-    <lastmod>2022-04-24</lastmod>
+    <lastmod>2022-04-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
