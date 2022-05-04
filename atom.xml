@@ -6,7 +6,7 @@
   <link href="https://wuzimo233.github.io/atom.xml" rel="self"/>
   
   <link href="https://wuzimo233.github.io/"/>
-  <updated>2022-05-04T15:17:15.697Z</updated>
+  <updated>2022-05-04T15:21:33.583Z</updated>
   <id>https://wuzimo233.github.io/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Vue-图书管理案例</title>
+    <title>Uni-app学习</title>
     <link href="https://wuzimo233.github.io/posts/12.html"/>
     <id>https://wuzimo233.github.io/posts/12.html</id>
     <published>2022-05-04T15:17:00.000Z</published>
-    <updated>2022-05-04T15:17:15.697Z</updated>
+    <updated>2022-05-04T15:21:33.583Z</updated>
     
     <content type="html"><![CDATA[<p>吗</p><h1 id="前置条件"><a href="#前置条件" class="headerlink" title="前置条件"></a>前置条件</h1><ul><li>有vue基础</li></ul><h1 id="什么是uni-app"><a href="#什么是uni-app" class="headerlink" title="什么是uni-app"></a>什么是uni-app</h1><ul><li>uni-app 是DCloud公司打造的一个使用 Vue.js 开发所有前端应用的框架，开发者编写一套代码，可发布到iOS、Android、Web（响应式）、以及各种小程序（微信/支付宝/百度/头条/飞书/QQ/快手/钉钉/淘宝）、快应用等多个平台。</li></ul><h2 id="HTML结构-简单了解"><a href="#HTML结构-简单了解" class="headerlink" title="HTML结构(简单了解)"></a>HTML结构(简单了解)</h2><ol><li>View容器–类似于div</li><li>text文本–包裹文本</li><li>swiper–轮播图</li><li>img–图片</li><li>video–视频</li><li>button–按钮</li></ol><h2 id="CSS样式"><a href="#CSS样式" class="headerlink" title="CSS样式"></a>CSS样式</h2><ol><li>属性<ul><li>字体</li><li>大小</li><li>布局：float</li></ul></li><li>选择器<br> class</li><li>取值与单位<ul><li>px</li><li>color</li><li>rpx 自动根据屏幕大小比例进行适配</li></ul></li><li>盒子模型<br> margin:外边距<br> padding:内边距<br> border:边框</li><li>弹性盒子模型<br> 更好的布局</li></ol>]]></content>
     
