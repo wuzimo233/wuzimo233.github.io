@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://wuzimo233.github.io/posts/13.html</loc>
+    
+    <lastmod>2022-05-26</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://wuzimo233.github.io/posts/12.html</loc>
     
     <lastmod>2022-05-04</lastmod>
@@ -186,7 +193,7 @@
 
   <url>
     <loc>https://wuzimo233.github.io/</loc>
-    <lastmod>2022-05-04</lastmod>
+    <lastmod>2022-05-26</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -194,63 +201,70 @@
   
   <url>
     <loc>https://wuzimo233.github.io/tags/%E7%94%9F%E6%B4%BB/</loc>
-    <lastmod>2022-05-04</lastmod>
+    <lastmod>2022-05-26</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://wuzimo233.github.io/tags/%E5%AD%A6%E4%B9%A0/</loc>
-    <lastmod>2022-05-04</lastmod>
+    <lastmod>2022-05-26</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://wuzimo233.github.io/tags/Ajax/</loc>
-    <lastmod>2022-05-04</lastmod>
+    <lastmod>2022-05-26</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://wuzimo233.github.io/tags/Promise/</loc>
-    <lastmod>2022-05-04</lastmod>
+    <lastmod>2022-05-26</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://wuzimo233.github.io/tags/Axios/</loc>
-    <lastmod>2022-05-04</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://wuzimo233.github.io/tags/vue/</loc>
-    <lastmod>2022-05-04</lastmod>
+    <lastmod>2022-05-26</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://wuzimo233.github.io/tags/JS/</loc>
-    <lastmod>2022-05-04</lastmod>
+    <lastmod>2022-05-26</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://wuzimo233.github.io/tags/vue/</loc>
+    <lastmod>2022-05-26</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://wuzimo233.github.io/tags/vue%E6%A1%88%E4%BE%8B/</loc>
-    <lastmod>2022-05-04</lastmod>
+    <lastmod>2022-05-26</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://wuzimo233.github.io/tags/uni-app/</loc>
-    <lastmod>2022-05-04</lastmod>
+    <lastmod>2022-05-26</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://wuzimo233.github.io/tags/Vuex/</loc>
+    <lastmod>2022-05-26</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -259,14 +273,14 @@
   
   <url>
     <loc>https://wuzimo233.github.io/categories/%E6%84%9F%E6%83%B3/</loc>
-    <lastmod>2022-05-04</lastmod>
+    <lastmod>2022-05-26</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://wuzimo233.github.io/categories/%E5%89%8D%E7%AB%AF/</loc>
-    <lastmod>2022-05-04</lastmod>
+    <lastmod>2022-05-26</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
