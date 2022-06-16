@@ -2,7 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://wuzimo233.github.io/posts/14.html</loc>
+    <loc>https://wuzimo233.github.io/posts/16.html</loc>
+    
+    <lastmod>2022-06-16</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://wuzimo233.github.io/posts/15.html</loc>
     
     <lastmod>2022-06-16</lastmod>
     
@@ -10,13 +17,6 @@
   
   <url>
     <loc>https://wuzimo233.github.io/posts/14.html</loc>
-    
-    <lastmod>2022-06-16</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://wuzimo233.github.io/posts/13.html</loc>
     
     <lastmod>2022-06-16</lastmod>
     
@@ -242,6 +242,13 @@
   </url>
   
   <url>
+    <loc>https://wuzimo233.github.io/tags/Promise/</loc>
+    <lastmod>2022-06-16</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://wuzimo233.github.io/tags/Ajax/</loc>
     <lastmod>2022-06-16</lastmod>
     <changefreq>daily</changefreq>
@@ -256,7 +263,7 @@
   </url>
   
   <url>
-    <loc>https://wuzimo233.github.io/tags/Promise/</loc>
+    <loc>https://wuzimo233.github.io/tags/vue/</loc>
     <lastmod>2022-06-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -264,13 +271,6 @@
   
   <url>
     <loc>https://wuzimo233.github.io/tags/JS/</loc>
-    <lastmod>2022-06-16</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://wuzimo233.github.io/tags/vue/</loc>
     <lastmod>2022-06-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
