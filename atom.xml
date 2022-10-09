@@ -6,7 +6,7 @@
   <link href="https://wuzimo233.github.io/atom.xml" rel="self"/>
   
   <link href="https://wuzimo233.github.io/"/>
-  <updated>2022-10-09T16:24:20.187Z</updated>
+  <updated>2022-10-09T17:07:55.626Z</updated>
   <id>https://wuzimo233.github.io/</id>
   
   <author>
@@ -17,13 +17,65 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Mysql初级</title>
+    <link href="https://wuzimo233.github.io/posts/21.html"/>
+    <id>https://wuzimo233.github.io/posts/21.html</id>
+    <published>2022-10-09T16:50:00.000Z</published>
+    <updated>2022-10-09T17:07:55.626Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id=""><a href="#" class="headerlink" title=""></a></h2><h1 id="Mysql基础知识"><a href="#Mysql基础知识" class="headerlink" title="Mysql基础知识"></a>Mysql基础知识</h1><h2 id="学习来源：https-www-itheima-com"><a href="#学习来源：https-www-itheima-com" class="headerlink" title="学习来源：https://www.itheima.com/"></a><strong>学习来源</strong>：<a href="https://www.itheima.com/">https://www.itheima.com/</a></h2><h2 id="day1"><a href="#day1" class="headerlink" title="day1"></a>day1</h2><p><img src="https://s1.ax1x.com/2022/10/10/xYawKe.jpg"></p><h2 id="day2"><a href="#day2" class="headerlink" title="day2"></a>day2</h2><p><img src="https://s1.ax1x.com/2022/10/10/xYasUI.png"></p><h2 id="day3"><a href="#day3" class="headerlink" title="day3"></a>day3</h2><p><img src="https://s1.ax1x.com/2022/10/10/xYa1b9.jpg"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;headerlink&quot; title=&quot;&quot;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h1 id=&quot;Mysql基础知识&quot;&gt;&lt;a href=&quot;#Mysql基础知识&quot; class=&quot;headerlink&quot; title=&quot;Mysql基础知识&quot;&gt;&lt;/a&gt;</summary>
+      
+    
+    
+    
+    <category term="测试" scheme="https://wuzimo233.github.io/categories/%E6%B5%8B%E8%AF%95/"/>
+    
+    
+    <category term="学习" scheme="https://wuzimo233.github.io/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="Mysql" scheme="https://wuzimo233.github.io/tags/Mysql/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Linux初级</title>
+    <link href="https://wuzimo233.github.io/posts/20.html"/>
+    <id>https://wuzimo233.github.io/posts/20.html</id>
+    <published>2022-10-09T16:30:25.000Z</published>
+    <updated>2022-10-09T17:08:23.444Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id=""><a href="#" class="headerlink" title=""></a></h2><h1 id="Linux基础知识"><a href="#Linux基础知识" class="headerlink" title="Linux基础知识"></a>Linux基础知识</h1><h2 id="学习来源：https-www-itheima-com"><a href="#学习来源：https-www-itheima-com" class="headerlink" title="学习来源：https://www.itheima.com/"></a><strong>学习来源</strong>：<a href="https://www.itheima.com/">https://www.itheima.com/</a></h2><h2 id="day1"><a href="#day1" class="headerlink" title="day1"></a>day1</h2><p><img src="https://s1.ax1x.com/2022/10/09/xYGEAf.jpg"></p><h2 id="day2"><a href="#day2" class="headerlink" title="day2"></a>day2</h2><p><img src="https://s1.ax1x.com/2022/10/09/xYGFBt.jpg"></p><h2 id="day3"><a href="#day3" class="headerlink" title="day3"></a>day3</h2><p><img src="https://s1.ax1x.com/2022/10/10/xYa9gS.jpg"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;headerlink&quot; title=&quot;&quot;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h1 id=&quot;Linux基础知识&quot;&gt;&lt;a href=&quot;#Linux基础知识&quot; class=&quot;headerlink&quot; title=&quot;Linux基础知识&quot;&gt;&lt;/a&gt;</summary>
+      
+    
+    
+    
+    <category term="测试" scheme="https://wuzimo233.github.io/categories/%E6%B5%8B%E8%AF%95/"/>
+    
+    
+    <category term="学习" scheme="https://wuzimo233.github.io/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="Linux" scheme="https://wuzimo233.github.io/tags/Linux/"/>
+    
+  </entry>
+  
+  <entry>
     <title>软件测试基础</title>
     <link href="https://wuzimo233.github.io/posts/19.html"/>
     <id>https://wuzimo233.github.io/posts/19.html</id>
     <published>2022-10-09T15:25:31.000Z</published>
-    <updated>2022-10-09T16:24:20.187Z</updated>
+    <updated>2022-10-09T16:30:04.572Z</updated>
     
-    <content type="html"><![CDATA[<h2 id=""><a href="#" class="headerlink" title=""></a></h2><h1 id="软件测试基础知识"><a href="#软件测试基础知识" class="headerlink" title="软件测试基础知识"></a>软件测试基础知识</h1><h2 id="学习来源：https-www-itheima-com"><a href="#学习来源：https-www-itheima-com" class="headerlink" title="学习来源：https://www.itheima.com/"></a><strong>学习来源</strong>：<a href="https://www.itheima.com/">https://www.itheima.com/</a></h2><h2 id="day1"><a href="#day1" class="headerlink" title="day1"></a>day1</h2><p>[<img src="https://s1.ax1x.com/2022/10/09/xYlFFe.png" alt="xYlFFe.png">]</p><h2 id="day2"><a href="#day2" class="headerlink" title="day2"></a>day2</h2><p>[<img src="https://s1.ax1x.com/2022/10/09/xYlSL6.png" alt="xYlSL6.png">]</p><h2 id="day3"><a href="#day3" class="headerlink" title="day3"></a>day3</h2><p>[<img src="https://s1.ax1x.com/2022/10/09/xYlPoD.jpg" alt="xYlPoD.jpg">]</p><h2 id="day4"><a href="#day4" class="headerlink" title="day4"></a>day4</h2><p>[<img src="https://s1.ax1x.com/2022/10/09/xYQdGd.png" alt="xYQdGd.png">]</p><h2 id="day5"><a href="#day5" class="headerlink" title="day5"></a>day5</h2><p>[<img src="https://s1.ax1x.com/2022/10/09/xYQ0xI.png" alt="xYQ0xI.png">]</p>]]></content>
+    <content type="html"><![CDATA[<h2 id=""><a href="#" class="headerlink" title=""></a></h2><h1 id="软件测试基础知识"><a href="#软件测试基础知识" class="headerlink" title="软件测试基础知识"></a>软件测试基础知识</h1><h2 id="学习来源：https-www-itheima-com"><a href="#学习来源：https-www-itheima-com" class="headerlink" title="学习来源：https://www.itheima.com/"></a><strong>学习来源</strong>：<a href="https://www.itheima.com/">https://www.itheima.com/</a></h2><h2 id="day1"><a href="#day1" class="headerlink" title="day1"></a>day1</h2><p><img src="https://s1.ax1x.com/2022/10/09/xYlFFe.png"></p><h2 id="day2"><a href="#day2" class="headerlink" title="day2"></a>day2</h2><p><img src="https://s1.ax1x.com/2022/10/09/xYlSL6.png"></p><h2 id="day3"><a href="#day3" class="headerlink" title="day3"></a>day3</h2><p><img src="https://s1.ax1x.com/2022/10/09/xYlPoD.jpg"></p><h2 id="day4"><a href="#day4" class="headerlink" title="day4"></a>day4</h2><p><img src="https://s1.ax1x.com/2022/10/09/xYQdGd.png"></p><h2 id="day5"><a href="#day5" class="headerlink" title="day5"></a>day5</h2><p><img src="https://s1.ax1x.com/2022/10/09/xYQ0xI.png"></p>]]></content>
     
     
       
@@ -491,31 +543,6 @@
     <category term="学习" scheme="https://wuzimo233.github.io/tags/%E5%AD%A6%E4%B9%A0/"/>
     
     <category term="Ajax" scheme="https://wuzimo233.github.io/tags/Ajax/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>博客与博主</title>
-    <link href="https://wuzimo233.github.io/posts/1.html"/>
-    <id>https://wuzimo233.github.io/posts/1.html</id>
-    <published>2022-04-12T17:17:00.000Z</published>
-    <updated>2022-04-15T06:14:16.957Z</updated>
-    
-    <content type="html"><![CDATA[<p>相遇皆是缘分</p><h3 id="为什么建博客？"><a href="#为什么建博客？" class="headerlink" title="为什么建博客？"></a>为什么建博客？</h3><p>因为学习一些知识总是学了就忘，或者敲了不复习，记得手写笔记也根本不爱翻动。花了大半天时间搭建个博客来记录未来学到的知识，勤能补拙吧~</p><h3 id="展望博客"><a href="#展望博客" class="headerlink" title="展望博客"></a>展望博客</h3><p>我会整理一些个人所学的知识（前端方向和一些其它数码、科技、摄影先暂时想这么多）或生活方面有兴趣的事发到博客上。</p><h3 id="关于博主"><a href="#关于博主" class="headerlink" title="关于博主"></a>关于博主</h3><p>普普通通的社畜。。</p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"> 勇敢就是，在你还没开始的时候就知道自己会输，但依然要去做，而且无论如何都要把它坚持到底。你很少能赢，但有时也会。​ <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><p>go on！</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;相遇皆是缘分&lt;/p&gt;
-&lt;h3 id=&quot;为什么建博客？&quot;&gt;&lt;a href=&quot;#为什么建博客？&quot; class=&quot;headerlink&quot; title=&quot;为什么建博客？&quot;&gt;&lt;/a&gt;为什么建博客？&lt;/h3&gt;&lt;p&gt;因为学习一些知识总是学了就忘，或者敲了不复习，记得手写笔记也根本不爱翻动</summary>
-      
-    
-    
-    
-    <category term="感想" scheme="https://wuzimo233.github.io/categories/%E6%84%9F%E6%83%B3/"/>
-    
-    
-    <category term="生活" scheme="https://wuzimo233.github.io/tags/%E7%94%9F%E6%B4%BB/"/>
     
   </entry>
   
