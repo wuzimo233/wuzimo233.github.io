@@ -6,7 +6,7 @@
   <link href="https://wuzimo233.github.io/atom.xml" rel="self"/>
   
   <link href="https://wuzimo233.github.io/"/>
-  <updated>2022-09-25T03:44:35.620Z</updated>
+  <updated>2022-10-09T15:25:46.837Z</updated>
   <id>https://wuzimo233.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>软件测试基础</title>
+    <link href="https://wuzimo233.github.io/posts/19.html"/>
+    <id>https://wuzimo233.github.io/posts/19.html</id>
+    <published>2022-10-09T15:25:31.000Z</published>
+    <updated>2022-10-09T15:25:46.837Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id=""><a href="#" class="headerlink" title=""></a></h2><h1 id="软件测试基础知识"><a href="#软件测试基础知识" class="headerlink" title="软件测试基础知识"></a>软件测试基础知识</h1><h2 id="学习来源：https-www-itheima-com"><a href="#学习来源：https-www-itheima-com" class="headerlink" title="学习来源：https://www.itheima.com/"></a><strong>学习来源</strong>：<a href="https://www.itheima.com/">https://www.itheima.com/</a></h2><h2 id="day1"><a href="#day1" class="headerlink" title="day1"></a>day1</h2><p><a href="https://imgse.com/i/xYlFFe"><img src="https://s1.ax1x.com/2022/10/09/xYlFFe.png" alt="xYlFFe.png"></a></p><h2 id="day2"><a href="#day2" class="headerlink" title="day2"></a>day2</h2><p><a href="https://imgse.com/i/xYlSL6"><img src="https://s1.ax1x.com/2022/10/09/xYlSL6.png" alt="xYlSL6.png"></a></p><h2 id="day3"><a href="#day3" class="headerlink" title="day3"></a>day3</h2><p><a href="https://imgse.com/i/xYlPoD"><img src="https://s1.ax1x.com/2022/10/09/xYlPoD.jpg" alt="xYlPoD.jpg"></a></p><h2 id="day4"><a href="#day4" class="headerlink" title="day4"></a>day4</h2><p><a href="https://imgse.com/i/xYQdGd"><img src="https://s1.ax1x.com/2022/10/09/xYQdGd.png" alt="xYQdGd.png"></a></p><h2 id="day5"><a href="#day5" class="headerlink" title="day5"></a>day5</h2><p><a href="https://imgse.com/i/xYQ0xI"><img src="https://s1.ax1x.com/2022/10/09/xYQ0xI.png" alt="xYQ0xI.png"></a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;headerlink&quot; title=&quot;&quot;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h1 id=&quot;软件测试基础知识&quot;&gt;&lt;a href=&quot;#软件测试基础知识&quot; class=&quot;headerlink&quot; title=&quot;软件测试基础知识&quot;&gt;&lt;/a&gt;软件测</summary>
+      
+    
+    
+    
+    <category term="测试" scheme="https://wuzimo233.github.io/categories/%E6%B5%8B%E8%AF%95/"/>
+    
+    
+    <category term="学习" scheme="https://wuzimo233.github.io/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="软件测试" scheme="https://wuzimo233.github.io/tags/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/"/>
+    
+  </entry>
   
   <entry>
     <title>git基本操作</title>
